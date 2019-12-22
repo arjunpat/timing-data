@@ -1,0 +1,20 @@
+defaults:
+  start: 5/19/2019
+  pattern:
+    - weekend
+    - odd
+    - even
+    - odd
+    - even
+    - odd
+    - weekend
+    - weekend
+    - even
+    - even
+    - odd
+    - even
+    - odd
+    - weekend
+
+calendar:
+  - 6/1/2019-8/11/2019 weekend "Summer Break"

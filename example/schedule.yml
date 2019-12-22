@@ -1,0 +1,14 @@
+defaults:
+  start: <start date>
+  pattern:
+    - <schedule id>
+    - <schedule id>
+    - <schedule id>
+    - <schedule id>
+    - <schedule id>
+    - <schedule id>
+    - <schedule id>
+
+calendar:
+  - <date> <schedule id> "<optional override of display name>"
+  - <date from>-<date to> <schedule id> "<optional override of display name>"

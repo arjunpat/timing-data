@@ -1,0 +1,44 @@
+periods:
+  - Period 1
+  - Period 2
+  - Period 3
+  - Period 4
+  - Period 5
+  - Period 6
+  - Period 7
+
+even:
+  name: Even Block
+  schedule:
+    - 8:15 Passing
+    - 8:20 Period 2
+    - 9:50 Brunch
+    - 10:00 Passing
+    - 10:05 Period 4
+    - 11:35 Lunch
+    - 12:05 Passing
+    - 12:15 Period 6
+    - 13:45 InFocus
+    - 13:55 Passing
+    - 14:05 Advisory
+    - 14:50 Free
+
+odd:
+  name: Odd Block
+  schedule:
+    - 8:15 Passing
+    - 8:20 Period 1
+    - 9:50 Brunch
+    - 10:00 Passing
+    - 10:05 Period 3
+    - 11:35 Lunch
+    - 12:05 Passing
+    - 12:15 Period 5
+    - 13:45 InFocus
+    - 13:55 Passing
+    - 14:05 Period 7
+    - 15:35 Free
+
+weekend:
+  name: Weekend
+  schedule: ~

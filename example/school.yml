@@ -1,0 +1,12 @@
+periods: 
+  - <period name>
+  - <period name>
+  - <period name>
+
+<schedule id>:
+  name: <display name>
+  schedule: 
+    - <start time> <period name>
+    - <end time> Free
+    - <start time> <period name>
+    - <end time> Free
