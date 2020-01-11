@@ -10,24 +10,41 @@ defaults:
     - weekend
 
 calendar:
-  - 6/8/2018 weekend "MLK Day"
-  - 6/8/2019-8/18/2019 weekend "Summer Break"
-  - 8/20/2019 tutorial
-  - 8/23/2019 G
-  - 9/6/2019 tutorial
-  - 9/18/2019 D
-  - 9/19/2019 E
-  - 10/14/2019 tutorial "Earthquake Drill"
-  - 10/15/2019 B
-  - 10/16/2019 weekend "PSAT Testing / No School"
-  - 10/21/2019 G "Homecoming Rally"
-  - 10/25/2019 F "Homecoming Min Day"
-  - 11/11/2019 weekend "Veteran's Day"
-  - 11/18/2019 tutorial
-  - 11/25/2019 tutorial
-  - 11/27/2019-12/01/2019 weekend "Thanksgiving Break"
-  - 12/18/2019 finals-267
-  - 12/19/2019 finals-015
-  - 12/20/2019 finals-34
-  - 12/21/2019-1/6/2020 weekend "Holiday Break"
+  # - 6/8/2018 weekend "MLK Day"
+  # - 6/8/2019-8/18/2019 weekend "Summer Break"
+  # - 8/20/2019 tutorial
+  # - 8/23/2019 G
+  # - 9/6/2019 tutorial
+  # - 9/18/2019 D
+  # - 9/19/2019 E
+  # - 10/14/2019 tutorial "Earthquake Drill"
+  # - 10/15/2019 B
+  # - 10/16/2019 weekend "PSAT Testing / No School"
+  # - 10/21/2019 G "Homecoming Rally"
+  # - 10/25/2019 F "Homecoming Min Day"
+  # - 11/11/2019 weekend "Veteran's Day"
+  # - 11/18/2019 tutorial
+  # - 11/25/2019 tutorial
+  # - 11/27/2019-12/01/2019 weekend "Thanksgiving Break"
+  # - 12/18/2019 finals-267
+  # - 12/19/2019 finals-015
+  # - 12/20/2019 finals-34
+  # - 12/21/2019-1/6/2020 weekend "Holiday Break"
   - 1/7/2020 A
+  - 1/13/2020 tutorial
+  - 1/20/2020 weekend "MLK Day"
+  - 1/21/2020 advisory-odd-block
+  - 1/22/2020 advisory-even-block
+  - 1/23/2020 tutorial
+  - 1/24/2020 tutorial
+  - 1/27/2020 G
+  - 2/5/2020 D
+  - 2/6/2020 E
+  - 2/10/2020 G
+  - 2/17/2020-2/21/2020 weekend "Winter Break"
+  - 3/16/2020-3/17/2020 weekend "No School"
+  - 3/23/2020 G
+  - 3/30/2020 G
+  - 4/6/2020-4/10/2020 weekend "Spring Break"
+  - 5/18/2020 G
+  - 5/25/2020 weekend "Memorial Day"
