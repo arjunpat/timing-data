@@ -1,0 +1,82 @@
+periods:
+  - Period 1
+  - Period 2
+  - Period 3
+  - Period 4
+  - Period 5
+  - Period 6
+  - Period 7
+
+monday:
+  name: Monday Schedule
+  schedule: 
+    - 8:40 Period 1
+    - 9:25 Passing
+    - 9:30 Period 2
+    - 10:15 Passing
+    - 10:20 Period 3
+    - 11:10 Brunch
+    - 11:25 Passing
+    - 11:30 Period 4
+    - 12:15 Passing
+    - 12:20 Period 5
+    - 13:05 Lunch
+    - 13:45 Passing
+    - 13:50 Period 6
+    - 14:35 Passing
+    - 14:40 Period 7
+    - 15:25 Free
+
+tuesday-friday:
+  name: Tuesday/Friday
+  schedule:
+    - 8:00 Period 1
+    - 8:45 Passing
+    - 8:50 Period 2
+    - 9:35 Passing
+    - 9:40 Tutorial
+    - 10:15 Passing
+    - 10:20 Period 3
+    - 11:10 Brunch
+    - 11:25 Passing
+    - 11:30 Period 4
+    - 12:15 Passing
+    - 12:20 Period 5
+    - 13:05 Lunch
+    - 13:45 Passing
+    - 13:50 Period 6
+    - 14:35 Passing
+    - 14:40 Period 7
+    - 15:25 Free
+
+thursday:
+  name: Thursday Block
+  schedule:
+    - 8:00 Period 1
+    - 9:30 Passing
+    - 9:40 Period 2
+    - 11:10 Brunch
+    - 11:25 Passing
+    - 11:30 Period 3
+    - 13:05 Lunch
+    - 13:45 Passing
+    - 13:50 Period 7
+    - 15:20 Free
+
+wednesday:
+  name: Wednesday Block
+  schedule:
+    - 8:55 Period 4
+    - 10:30 Passing
+    - 10:35 Tutorial
+    - 11:15 Brunch
+    - 11:30 Passing
+    - 11:35 Period 5
+    - 13:05 Lunch
+    - 13:45 Passing
+    - 13:50 Period 6
+    - 15:20 Free
+
+weekend:
+  name: Weeekend
+  schedule: ~

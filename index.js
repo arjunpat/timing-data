@@ -31,6 +31,10 @@ const obj = {
 	paly: {
 		name: 'Palo Alto High School',
 		...loadSchool('paly')
+	},
+	montavista: {
+		name: 'Monta Vista High School',
+		...loadSchool('montavista')
 	}
 }
 
