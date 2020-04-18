@@ -8,8 +8,9 @@ function loadSchool(id) {
 
 	let validator = new Validator(school, schedule);
 	if (validator.areErrors()) {
-		console.log(id);
-		throw JSON.stringify(validator.getErrors());
+		console.error('errors found for: ' + id);
+		console.error(validator.getErrors());
+		throw "ScheduleError";
 	}
 
 	return {
