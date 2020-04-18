@@ -1,4 +1,7 @@
 
+const scheduleItemRegEx = /^[a-zA-Z0-9\s:&]+$/;
+const calendarItemRegEx = /^[a-zA-Z0-9\s/"-]+$/;
+
 class Validator {
 	constructor(school, schedule) {
 		this.errors = {
@@ -96,7 +99,8 @@ class Validator {
 
 	checkScheduleArray(scheduleArr, presetName) {
 		let last;
-		for (let event of scheduleArr) {
+		for (let i = 0; i < scheduleArr.length;) {
+			let event = scheduleArr[i]
 			let time = Date.parse(`1/1/1970 ${event.substr(0, event.indexOf(' '))}`);
 			if (isNaN(time)) {
 				this.schoolError(`Preset "${presetName}" has an invalid schedule near (${event}). It was unable to parse the time of this event.`)
@@ -104,7 +108,13 @@ class Validator {
 			if (typeof last === 'number' && last >= time) {
 				this.schoolError(`Preset "${presetName}" has an invalid schedule near (${event}). This error is due to the time/format of this line or surrounding lines. Please check that you are using 24 hour time.`);
 			}
+			if (!scheduleItemRegEx.test(event)) {
+				this.schoolError(`Preset "${presetName}" has an invalid schedule near (${event}).`);
+			}
 			last = time;
+
+			if (++i === scheduleArr.length && event.substr(event.indexOf(' ') + 1, event.length) !== 'Free')
+				this.schoolError(`Preset "${presetName}" has an invalid schedule: it does not end with a "Free" period`);
 		}
 	}
 
@@ -122,11 +132,9 @@ class Validator {
 		return data;
 	}
 
-	calStringSanCheck(str) {
-		this.scheduleError(`Issue parsing schedule around (${str})`);
-	}
-
 	parseCalendarString(str) {
+		let bad = !calendarItemRegEx.test(str);
+
 		let pieces = str.split('"');
 		let n;
 
@@ -135,11 +143,10 @@ class Validator {
 			str = pieces[0].trim();
 			n = pieces[1];
 		} else if (pieces.length > 1) // there shouldn't be one "
-			this.calStringSanCheck(str);
+			bad = true;
 
 		pieces = str.split(' ');
-		if (pieces.length !== 2)
-			this.calStringSanCheck(str);
+		bad = pieces.length !== 2;
 		
 		let t = pieces[1];
 		let from, to, date;
@@ -149,11 +156,14 @@ class Validator {
 			from = pieces[0];
 			to = pieces[1];
 
-			if (pieces.length !== 2 || isNaN(Date.parse(from)) || isNaN(Date.parse(to))) this.calStringSanCheck(str);
+			bad = pieces.length !== 2 || isNaN(Date.parse(from)) || isNaN(Date.parse(to));
 		} else {
 			date = pieces[0];
 			if (isNaN(Date.parse(date))) this.calStringSanCheck(str);
 		}
+
+		if (bad)
+			this.scheduleError(`Issue parsing calendar around (${str})`);
 
 		return{
 			date,
