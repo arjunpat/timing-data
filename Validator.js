@@ -133,6 +133,7 @@ class Validator {
 	}
 
 	parseCalendarString(str) {
+		let original = str;
 		let bad = !calendarItemRegEx.test(str);
 
 		let pieces = str.split('"');
@@ -146,7 +147,7 @@ class Validator {
 			bad = true;
 
 		pieces = str.split(' ');
-		bad = pieces.length !== 2;
+		bad = bad || pieces.length !== 2;
 		
 		let t = pieces[1];
 		let from, to, date;
@@ -156,14 +157,14 @@ class Validator {
 			from = pieces[0];
 			to = pieces[1];
 
-			bad = pieces.length !== 2 || isNaN(Date.parse(from)) || isNaN(Date.parse(to));
+			bad = bad || pieces.length !== 2 || isNaN(Date.parse(from)) || isNaN(Date.parse(to));
 		} else {
 			date = pieces[0];
-			if (isNaN(Date.parse(date))) this.calStringSanCheck(str);
+			bad = bad || isNaN(Date.parse(date));
 		}
 
 		if (bad)
-			this.scheduleError(`Issue parsing calendar around (${str})`);
+			this.scheduleError(`Issue parsing calendar around (${original})`);
 
 		return{
 			date,
