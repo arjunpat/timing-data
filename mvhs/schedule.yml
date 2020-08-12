@@ -5,7 +5,7 @@ defaults:
     - dl-odd-block
     - dl-even-block
     - dl-work-day
-    - dl-odd-blcok
+    - dl-odd-block
     - dl-even-block
     - weekend
 
