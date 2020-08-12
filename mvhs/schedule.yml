@@ -1,12 +1,12 @@
 defaults:
-  start: 1/26/2020
+  start: 8/9/2020
   pattern:
     - weekend
-    - A
-    - tutorial
-    - B
-    - C
-    - A
+    - dl-odd-block
+    - dl-even-block
+    - dl-work-day
+    - dl-odd-blcok
+    - dl-even-block
     - weekend
 
 calendar:
@@ -30,21 +30,22 @@ calendar:
   # - 12/19/2019 finals-015
   # - 12/20/2019 finals-34
   # - 12/21/2019-1/6/2020 weekend "Holiday Break"
-  - 1/7/2020 A
-  - 1/13/2020 tutorial
-  - 1/20/2020 weekend "MLK Day"
-  - 1/21/2020 advisory-odd-block
-  - 1/22/2020 advisory-even-block
-  - 1/23/2020 tutorial
-  - 1/24/2020 tutorial
-  - 1/27/2020 G
-  - 2/5/2020 D
-  - 2/6/2020 E
-  - 2/10/2020 G
-  - 2/17/2020-2/21/2020 weekend "Winter Break"
-  - 3/16/2020-3/17/2020 weekend "No School"
-  - 3/18/2020-6/5/2020 weekend "Distance Learning"
-  - 6/6/2020-8/16/2020 weekend "Distance Learning"
-  #- 4/6/2020-4/10/2020 weekend "Spring Break"
-  #- 5/18/2020 G
-  #- 5/25/2020 weekend "Memorial Day"
+  # - 1/7/2020 A
+  # - 1/13/2020 tutorial
+  # - 1/20/2020 weekend "MLK Day"
+  # - 1/21/2020 advisory-odd-block
+  # - 1/22/2020 advisory-even-block
+  # - 1/23/2020 tutorial
+  # - 1/24/2020 tutorial
+  # - 1/27/2020 G
+  # - 2/5/2020 D
+  # - 2/6/2020 E
+  # - 2/10/2020 G
+  # - 2/17/2020-2/21/2020 weekend "Winter Break"
+  # - 3/16/2020-3/17/2020 weekend "No School"
+  # - 3/18/2020-6/5/2020 weekend "Distance Learning"
+  # - 4/6/2020-4/10/2020 weekend "Spring Break"
+  # - 5/18/2020 G
+  # - 5/25/2020 weekend "Memorial Day"
+  # - 6/6/2020-8/11/2020 weekend "Summer Break"
+  - 8/12/2020-8/14/2020 weekend "DL Orientation"

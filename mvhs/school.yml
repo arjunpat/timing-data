@@ -307,3 +307,30 @@ sbac-4:
     - 14:25 Passing
     - 14:30 Period 7
     - 15:30 Free
+
+# distance learning
+dl-odd-block:
+  name: Odd Block
+  schedule:
+    - 9:30 Period 1
+    - 10:45 Free
+    - 11:00 Period 3
+    - 12:15 Lunch
+    - 13:05 Period 5
+    - 14:20 Period 7
+    - 15:45 Free
+
+dl-even-block:
+  name: Even Block
+  schedule:
+    - 9:30 Period 2
+    - 10:45 Free
+    - 11:00 Period 4
+    - 12:15 Lunch
+    - 13:05 Period 6
+    - 14:20 Tutorial
+    - 15:45 Free
+
+dl-work-day:
+  name: Work Day
+  schedule: ~
