@@ -309,6 +309,55 @@ sbac-4:
     - 15:30 Free
 
 # distance learning
+distance-learning-mon:
+  name: Monday
+  schedule: ~
+
+distance-learning-tues:
+  name: Tuesday
+  schedule:
+    - 9:00 Period 1
+    - 10:00 Break
+    - 10:30 Period 3
+    - 11:30 Period 5
+    - 12:30 Break
+    - 13:30 Period 7
+    - 14:30 Free
+
+distance-learning-wed:
+  name: Wednesday
+  schedule:
+    - 9:00 Period 0
+    - 10:00 Break
+    - 10:30 Period 2
+    - 11:30 Period 4
+    - 12:30 Break
+    - 13:30 Period 6
+    - 14:30 Free
+
+distance-learning-thurs:
+  name: Thursday
+  schedule:
+    - 9:00 Period 7
+    - 10:00 Break
+    - 10:30 Period 5
+    - 11:30 Period 3
+    - 12:30 Break
+    - 13:30 Period 1
+    - 14:30 Free
+
+distance-learning-fri:
+  name: Friday
+  schedule:
+    - 9:00 Period 6
+    - 10:00 Break
+    - 10:30 Period 4
+    - 11:30 Period 2
+    - 12:30 Break
+    - 13:30 Period 0
+    - 14:30 Free
+
+# 2020-2021 school year
 dl-odd-block:
   name: Odd Block
   schedule:

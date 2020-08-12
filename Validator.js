@@ -1,4 +1,7 @@
 
+const scheduleItemRegEx = /^[a-zA-Z0-9\s:&]+$/;
+const calendarItemRegEx = /^[a-zA-Z0-9\s/"-]+$/;
+
 class Validator {
 	constructor(school, schedule) {
 		this.errors = {
@@ -6,32 +9,33 @@ class Validator {
 			schedule: []
 		}
 
-		school = this.parseSchool(school);
-		schedule = this.parseSchedule(schedule);
+		this.school = this.parseSchool(school);
+		this.schedule = this.parseSchedule(schedule);
 
-		// validation
-		for (let preset of schedule.defaults.pattern) {
-			if (!school.presets[preset]) {
-				this.schoolError(`No preset "${preset}" as mentioned in defaults`);
-			}
-		}
+		this.validate();
+		this.cleanup();
+	}
 
-		for (let item of schedule.calendar) {
-			if (!school.presets[item.content.t]) {
-				this.schoolError(`No preset "${item.content.t}" as mentioned in calendar`);
-			}
-		}
+	validate() {
+		let mentions = new Set(this.schedule.defaults.pattern);
+		mentions.forEach(p => {
+			if (!this.school.presets[p])
+				this.schoolError(`No preset "${p}" as mentioned in defaults`);
+		});
 
-		// cleanup
-		let allMentionedPresets = [...schedule.calendar.map(i => i.content.t), ...schedule.defaults.pattern];
-		for (let preset in school.presets) {
-			if (!allMentionedPresets.includes(preset)) {
-				delete school.presets[preset];
-			}
-		}
 
-		this.school = school;
-		this.schedule = schedule;
+		mentions = new Set(this.schedule.calendar.map(e => e.content.t));
+		mentions.forEach(p => {
+			if (!this.school.presets[p])
+				this.schoolError(`No preset "${p}" as mentioned in calendar`);
+		});
+	}
+
+	cleanup() {
+		let mentions = new Set([...this.schedule.calendar.map(i => i.content.t), ...this.schedule.defaults.pattern]);
+		for (let preset in this.school.presets)
+			if (!mentions.has(preset))
+				delete this.school.presets[preset];
 	}
 
 	schoolError(text) {
@@ -76,16 +80,7 @@ class Validator {
 					if (!school[key].schedule) {
 						return [];
 					} else if (school[key].schedule instanceof Array) {
-
-						// check the schedule
-						let last;
-						for (let event of school[key].schedule) {
-							let time = Date.parse(`1/1/1970 ${event.substr(0, event.indexOf(' '))}`);
-							if (typeof last === 'number' && last > time) {
-								this.schoolError(`Preset "${key}" has an invalid schedule near (${event}). This error is due to the time/format of this line or surrounding lines. Please check that you are using 24 hour time.`);
-							}
-							last = time;
-						}
+						this.checkScheduleArray(school[key].schedule, key);
 
 						return school[key].schedule.join(',');
 					} else {
@@ -102,6 +97,27 @@ class Validator {
 		return obj;
 	}
 
+	checkScheduleArray(scheduleArr, presetName) {
+		let last;
+		for (let i = 0; i < scheduleArr.length;) {
+			let event = scheduleArr[i]
+			let time = Date.parse(`1/1/1970 ${event.substr(0, event.indexOf(' '))}`);
+			if (isNaN(time)) {
+				this.schoolError(`Preset "${presetName}" has an invalid schedule near (${event}). It was unable to parse the time of this event.`)
+			}
+			if (typeof last === 'number' && last >= time) {
+				this.schoolError(`Preset "${presetName}" has an invalid schedule near (${event}). This error is due to the time/format of this line or surrounding lines. Please check that you are using 24 hour time.`);
+			}
+			if (!scheduleItemRegEx.test(event)) {
+				this.schoolError(`Preset "${presetName}" has an invalid schedule near (${event}).`);
+			}
+			last = time;
+
+			if (++i === scheduleArr.length && event.substr(event.indexOf(' ') + 1, event.length) !== 'Free')
+				this.schoolError(`Preset "${presetName}" has an invalid schedule: it does not end with a "Free" period`);
+		}
+	}
+
 	parseSchedule(schedule) {
 		schedule.calendar = this.parseCalendarArray(schedule.calendar);
 		return schedule;
@@ -110,39 +126,55 @@ class Validator {
 	parseCalendarArray(arr) {
 		let data = [];
 
-		for (let i = 0; i < arr.length; i++) {
-			let pieces = arr[i].split('"');
-			let n;
-
-			if (pieces.length === 3) { // custom name
-				arr[i] = pieces[0].trim();
-				n = pieces[1];
-			}
-
-			pieces = arr[i].split(' ');
-			let t = pieces[1];
-			let from, to, date;
-
-			if (pieces[0].includes('-')) {
-				pieces = pieces[0].split('-');
-				from = pieces[0];
-				to = pieces[1];
-			} else {
-				date = pieces[0];
-			}
-
-			data.push({
-				date,
-				from,
-				to,
-				content: {
-					n,
-					t
-				}
-			});
-		}
+		for (let each of arr)
+			data.push(this.parseCalendarString(each));
 
 		return data;
+	}
+
+	parseCalendarString(str) {
+		let original = str;
+		let bad = !calendarItemRegEx.test(str);
+
+		let pieces = str.split('"');
+		let n;
+
+		// custom name; so remove that part
+		if (pieces.length === 3) {
+			str = pieces[0].trim();
+			n = pieces[1];
+		} else if (pieces.length > 1) // there shouldn't be one "
+			bad = true;
+
+		pieces = str.split(' ');
+		bad = bad || pieces.length !== 2;
+		
+		let t = pieces[1];
+		let from, to, date;
+
+		if (pieces[0].includes('-')) {
+			pieces = pieces[0].split('-');
+			from = pieces[0];
+			to = pieces[1];
+
+			bad = bad || pieces.length !== 2 || isNaN(Date.parse(from)) || isNaN(Date.parse(to));
+		} else {
+			date = pieces[0];
+			bad = bad || isNaN(Date.parse(date));
+		}
+
+		if (bad)
+			this.scheduleError(`Issue parsing calendar around (${original})`);
+
+		return{
+			date,
+			from,
+			to,
+			content: {
+				n,
+				t
+			}
+		}
 	}
 }
 
