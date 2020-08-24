@@ -365,7 +365,8 @@ dl-odd-block:
     - 11:00 Period 3
     - 12:15 Lunch
     - 13:05 Period 5
-    - 14:20 Period 7
+    - 14:20 Free
+    - 14:30 Period 7
     - 15:45 Free
 
 dl-even-block:
