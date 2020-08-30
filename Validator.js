@@ -46,7 +46,7 @@ class Validator {
 		this.errors.schedule.push(text);
 	}
 
-	areErrors() {
+	hasErrors() {
 		return this.errors.school.length !== 0 || this.errors.schedule.length !== 0;
 	}
 
@@ -97,28 +97,37 @@ class Validator {
 		return obj;
 	}
 
+	getEvent(str) {
+		let i = str.indexOf(' ');
+		return {
+			time: str.substr(0, i),
+			name: str.substr(i + 1, str.length)
+		}
+	}
+
 	checkScheduleArray(scheduleArr, presetName) {
 		let last;
 		for (let i = 0; i < scheduleArr.length;) {
-			let event = scheduleArr[i]
-			let time = Date.parse(`1/1/1970 ${event.substr(0, event.indexOf(' '))}`);
+			let str = scheduleArr[i]
+			if (!scheduleItemRegEx.test(str)) this.schoolError(`Preset "${presetName}" has an invalid schedule near (${str}).`);
+			let event = this.getEvent(str);
+
+			let time = Date.parse(`1/1/1970 ${event.time}`);
 			if (isNaN(time)) {
-				this.schoolError(`Preset "${presetName}" has an invalid schedule near (${event}). It was unable to parse the time of this event.`)
+				this.schoolError(`Preset "${presetName}" has an invalid schedule near (${str}). It was unable to parse the time of this event.`)
 			}
 			if (typeof last === 'number' && last >= time) {
-				this.schoolError(`Preset "${presetName}" has an invalid schedule near (${event}). This error is due to the time/format of this line or surrounding lines. Please check that you are using 24 hour time.`);
-			}
-			if (!scheduleItemRegEx.test(event)) {
-				this.schoolError(`Preset "${presetName}" has an invalid schedule near (${event}).`);
+				this.schoolError(`Preset "${presetName}" has an invalid schedule near (${str}). This error is due to the time/format of this line or surrounding lines. Please check that you are using 24 hour time.`);
 			}
 			last = time;
 
-			if (++i === scheduleArr.length && event.substr(event.indexOf(' ') + 1, event.length) !== 'Free')
+			if (++i === scheduleArr.length && event.name !== 'Free')
 				this.schoolError(`Preset "${presetName}" has an invalid schedule: it does not end with a "Free" period`);
 		}
 	}
 
 	parseSchedule(schedule) {
+		if (!schedule.calendar) schedule.calendar = [];
 		schedule.calendar = this.parseCalendarArray(schedule.calendar);
 		return schedule;
 	}

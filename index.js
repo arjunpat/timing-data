@@ -7,7 +7,7 @@ function loadSchool(id) {
 	let schedule = yaml.safeLoad(fs.readFileSync(`./timing-data/${id}/schedule.yml`).toString());
 
 	let validator = new Validator(school, schedule);
-	if (validator.areErrors()) {
+	if (validator.hasErrors()) {
 		console.error('errors found for: ' + id);
 		console.error(validator.getErrors());
 		throw "ScheduleError";
@@ -36,7 +36,11 @@ const obj = {
 	montavista: {
 		name: 'Monta Vista High School',
 		...loadSchool('montavista')
-	}
+	},
+	lemanmiddle: {
+		name: 'Leman Middle School',
+		...loadSchool('lemanmiddle')
+	},
 }
 
 const schools = [];
