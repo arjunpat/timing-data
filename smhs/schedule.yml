@@ -1,5 +1,5 @@
 defaults:
-  start: 08/18/2020
+  start: 8/23/2020
   pattern:
     - weekend
     - monday
