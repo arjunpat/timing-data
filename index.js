@@ -41,6 +41,10 @@ const obj = {
 		name: 'Leman Middle School',
 		...loadSchool('lemanmiddle')
 	},
+	smhs: {
+		name: 'San Marcos High School',
+		...loadSchool('smhs')
+	},
 }
 
 const schools = [];

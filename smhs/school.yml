@@ -6,7 +6,7 @@ periods:
   - Period 4
   - Period 7
 
-Monday:
+monday:
   name: Monday Schedule
   schedule: 
     - 7:50 Period 0/7

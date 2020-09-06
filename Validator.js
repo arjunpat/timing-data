@@ -1,6 +1,6 @@
 
-const scheduleItemRegEx = /^[a-zA-Z0-9\s:&]+$/;
-const calendarItemRegEx = /^[a-zA-Z0-9\s/"-]+$/;
+const scheduleItemRegEx = /^[a-zA-Z0-9\s:&/]+$/;
+const calendarItemRegEx = /^[a-zA-Z0-9\s/"\-'.]+$/;
 
 class Validator {
 	constructor(school, schedule) {
@@ -114,7 +114,7 @@ class Validator {
 
 			let time = Date.parse(`1/1/1970 ${event.time}`);
 			if (isNaN(time)) {
-				this.schoolError(`Preset "${presetName}" has an invalid schedule near (${str}). It was unable to parse the time of this event.`)
+				this.schoolError(`Preset "${presetName}" has an invalid schedule near (${str}). It was unable to parse the time of this event.`);
 			}
 			if (typeof last === 'number' && last >= time) {
 				this.schoolError(`Preset "${presetName}" has an invalid schedule near (${str}). This error is due to the time/format of this line or surrounding lines. Please check that you are using 24 hour time.`);
@@ -166,7 +166,7 @@ class Validator {
 			from = pieces[0];
 			to = pieces[1];
 
-			bad = bad || pieces.length !== 2 || isNaN(Date.parse(from)) || isNaN(Date.parse(to));
+			bad = bad || pieces.length !== 2 || isNaN(Date.parse(from)) || isNaN(Date.parse(to)) || Date.parse(to) <= Date.parse(from);
 		} else {
 			date = pieces[0];
 			bad = bad || isNaN(Date.parse(date));
@@ -175,7 +175,7 @@ class Validator {
 		if (bad)
 			this.scheduleError(`Issue parsing calendar around (${original})`);
 
-		return{
+		return {
 			date,
 			from,
 			to,
