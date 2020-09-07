@@ -49,3 +49,6 @@ calendar:
   # - 5/25/2020 weekend "Memorial Day"
   # - 6/6/2020-8/11/2020 weekend "Summer Break"
   - 8/12/2020-8/14/2020 weekend "DL Orientation"
+  - 9/7/2020 weekend "Labor Day"
+  - 9/8/2020 dl-odd-block
+  - 9/9/2020 dl-even-block
