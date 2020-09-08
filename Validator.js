@@ -109,6 +109,11 @@ class Validator {
 		let last;
 		for (let i = 0; i < scheduleArr.length;) {
 			let str = scheduleArr[i]
+			if (typeof str !== 'string') {
+				this.schoolError(`Preset "${presetName}" has an invalid schedule near (${str}). Not a string.`);
+				i++; continue;
+			}
+
 			if (!scheduleItemRegEx.test(str)) this.schoolError(`Preset "${presetName}" has an invalid schedule near (${str}).`);
 			let event = this.getEvent(str);
 

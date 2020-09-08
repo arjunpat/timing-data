@@ -1,0 +1,72 @@
+periods:
+  - Period 1
+  - Period 2
+  - Period 3
+  - Period 4
+  - Period 5
+  - Period 6
+
+monday:
+  name: Monday
+  schedule:
+   - 8:30 Advisory
+   - 9:10 Period 1
+   - 10:34 Brunch
+   - 10:44 Period 3
+   - 12:09 Lunch
+   - 12:39 Period 5
+   - 14:03 Break
+   - 14:13 Meet Up
+   - 15:03 Free
+
+tuesday:
+  name: Tuesday
+  schedule:
+    - 8:30 Period 2
+    - 10:00 Brunch
+    - 10:10 Period 4
+    - 11:40 Lunch
+    - 12:30 Period 6
+    - 14:00 Break
+    - 14:10 Meet Up
+    - 15:03 Free
+
+wednesday:
+  name: Wednesday
+  schedule:
+    - 8:30 Advisory
+    - 9:00 Free
+    - 9:10 Async Work
+    - 12:00 Lunch
+    - 12:40 Async Work
+    - 14:30 Free
+
+thursday:
+  name: Thursday
+  schedule:
+    - 8:30 Period 1
+    - 10:00 Brunch
+    - 10:10 Period 3
+    - 11:40 Lunch
+    - 12:30 Period 4
+    - 14:00 Break
+    - 14:10 Meet Up
+    - 15:03 Free
+
+friday:
+  name: Friday
+  schedule:
+    - 8:30 Advisory
+    - 9:00 Free
+    - 9:10 Period 2
+    - 10:34 Brunch
+    - 10:44 Period 4
+    - 12:09 Lunch
+    - 12:39 Period 6
+    - 14:03 Break
+    - 14:13 Meet Up
+    - 15:03 Free
+
+weekend:
+  name: Weekend
+  schedule: ~
