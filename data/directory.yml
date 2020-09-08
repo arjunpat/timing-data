@@ -1,0 +1,22 @@
+
+mvhs:
+  name: Mountain View High School
+
+lahs:
+  name: Los Altos High School
+  folder: mvhs # optional; only set if different
+
+paly:
+  name: Palo Alto High School
+
+montavista:
+  name: Monta Vista High School
+
+lemanmiddle:
+  name: Leman Middle School
+
+smhs:
+  name: San Marcos High School
+
+blach:
+  name: Blach Intermediate School

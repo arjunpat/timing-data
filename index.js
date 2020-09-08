@@ -8,8 +8,8 @@ function readFile(path) {
 }
 
 function loadSchool(id) {
-	let school = yaml.safeLoad(readFile(path.join(__dirname, `./${id}/school.yml`)));
-	let schedule = yaml.safeLoad(readFile(path.join(__dirname, `./${id}/schedule.yml`)));
+	let school = yaml.safeLoad(readFile(path.join(__dirname, `./data/${id}/school.yml`)));
+	let schedule = yaml.safeLoad(readFile(path.join(__dirname, `./data/${id}/schedule.yml`)));
 
 	let validator = new Validator(school, schedule);
 	if (validator.hasErrors()) {
@@ -25,35 +25,15 @@ function loadSchool(id) {
 	}
 }
 
-const obj = {
-	mvhs: {
-		name: 'Mountain View High School',
-		...loadSchool('mvhs')
-	},
-	lahs: {
-		name: 'Los Altos High School',
-		...loadSchool('mvhs')	
-	},
-	paly: {
-		name: 'Palo Alto High School',
-		...loadSchool('paly')
-	},
-	montavista: {
-		name: 'Monta Vista High School',
-		...loadSchool('montavista')
-	},
-	lemanmiddle: {
-		name: 'Leman Middle School',
-		...loadSchool('lemanmiddle')
-	},
-	smhs: {
-		name: 'San Marcos High School',
-		...loadSchool('smhs')
-	},
-	blach: {
-		name: 'Blach Intermediate School',
-		...loadSchool('blach')
-	},
+const directory = yaml.safeLoad(readFile('./data/directory.yml'));
+const obj = {};
+
+for (let key in directory) {
+	let folder = directory[key].folder ? directory[key].folder : key
+	obj[key] = {
+		name: directory[key].name,
+		...loadSchool(folder)
+	}
 }
 
 const schools = [];
