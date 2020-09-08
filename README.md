@@ -41,12 +41,13 @@ Add each of the possible daily schedules to the file, following the frame for `d
 The `defaults` section allows you to specify a recurring order of schedules that begins on a certain `start` date and cycles indefinetly.
 
 The `calendar` section allow you to override the defaults on specific days or date ranges.
-The syntax for each line follows one of the following:
+
+Some example uses for this could be:
 ```
-{date} {schedule}
-{date} {schedule} "{custom display name for that schedule}"
-{start date}-{end date} {schedule}
-{start date}-{end date} {schedule} "{custom display name for that schedule}"
+6/10/2020-8/17/2020 weekend "Summer Break"
+9/7/2020 weekend "Labor Day"
+10/18/2020 assembly
+11/18/2020-11/25/2020 weekend "Thanksgiving Break"
 ```
 
 ## 5. Pull Request
