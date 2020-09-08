@@ -1,10 +1,15 @@
 const yaml = require('js-yaml');
 const Validator = require('./Validator');
 const fs = require('fs');
+const path = require('path');
+
+function readFile(path) {
+	return fs.readFileSync(path).toString();
+}
 
 function loadSchool(id) {
-	let school = yaml.safeLoad(fs.readFileSync(`./timing-data/${id}/school.yml`).toString());
-	let schedule = yaml.safeLoad(fs.readFileSync(`./timing-data/${id}/schedule.yml`).toString());
+	let school = yaml.safeLoad(readFile(path.join(__dirname, `./${id}/school.yml`)));
+	let schedule = yaml.safeLoad(readFile(path.join(__dirname, `./${id}/schedule.yml`)));
 
 	let validator = new Validator(school, schedule);
 	if (validator.hasErrors()) {

@@ -1,0 +1,25 @@
+{
+  "name": "timing-data",
+  "version": "1.0.0",
+  "description": "Timing data for periods.io",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arjunpat/timing-data.git"
+  },
+  "author": "Arjun Patrawala, others",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arjunpat/timing-data/issues"
+  },
+  "homepage": "https://github.com/arjunpat/timing-data#readme",
+  "dependencies": {
+    "js-yaml": "^3.14.0"
+  }
+}
