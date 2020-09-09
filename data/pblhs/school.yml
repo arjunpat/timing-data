@@ -1,0 +1,30 @@
+periods:
+  - Period 1
+  - Period 2
+  - Period 3
+  - Period 4
+  - Period 5
+  - Period 6
+  - Period 7
+
+normal:
+  name: Normal Schedule
+  schedule:
+    - 7:30 Period 1
+    - 8:24 Free
+    - 8:30 Period 2
+    - 9:24 Free
+    - 9:30 Period 3
+    - 10:24 Free
+    - 10:30 Period 4
+    - 11:24 Lunch
+    - 12:00 Period 5
+    - 12:54 Free
+    - 13:00 Period 6
+    - 13:54 Free
+    - 14:00 Period 7
+    - 14:54 Free
+
+weekend:
+  name: weekend
+  schedule: ~
