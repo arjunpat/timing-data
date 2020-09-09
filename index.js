@@ -3,13 +3,13 @@ const Validator = require('./Validator');
 const fs = require('fs');
 const path = require('path');
 
-function readFile(path) {
-	return fs.readFileSync(path).toString();
+function readFile(loc) {
+	return fs.readFileSync(path.join(__dirname, loc)).toString();
 }
 
 function loadSchool(id) {
-	let school = yaml.safeLoad(readFile(path.join(__dirname, `./data/${id}/school.yml`)));
-	let schedule = yaml.safeLoad(readFile(path.join(__dirname, `./data/${id}/schedule.yml`)));
+	let school = yaml.safeLoad(readFile(`./data/${id}/school.yml`));
+	let schedule = yaml.safeLoad(readFile(`./data/${id}/schedule.yml`));
 
 	let validator = new Validator(school, schedule);
 	if (validator.hasErrors()) {
