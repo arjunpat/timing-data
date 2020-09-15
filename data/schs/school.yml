@@ -1,0 +1,57 @@
+
+periods: 
+  - Period 1
+  - Period 2
+  - Period 3
+  - Period 4
+  - Period 5
+  - Lunch
+  - Period 6
+  - Period 7
+  - Period 8
+
+
+normal:
+  name: Normal Schedule
+  schedule: 
+    - 8:15 Period 1
+    - 9:00 Passing
+    - 9:06 Period 2
+    - 9:51 Passing
+    - 9:57 Period 3
+    - 10:42 Passing
+    - 10:48 Period 4
+    - 11:33 Passing
+    - 11:39 Period 5
+    - 12:25 Lunch
+    - 13:07 Passing
+    - 13:13 Period 6
+    - 13:58 Passing
+    - 14:04 Period 7
+    - 14:49 Passing
+    - 14:55 Period 8
+    - 15:40 End of Day
+
+
+chapel:
+  name: Chapel Schedule
+  schedule:
+    - 8:15 Period 1
+    - 8:53 Passing
+    - 8:59 Period 2
+    - 9:38 Passing
+    - 9:44 Period 3
+    - 10:23 Passing
+    - 10:29 Chapel
+    - 11:14 Passing
+    - 11:20 Period 4
+    - 12:00 Passing
+    - 12:06 Period 5
+    - 12:46 Lunch
+    - 13:28 Passing
+    - 13:34 Period 6
+    - 14:12 Passing
+    - 14:18 Period 7
+    - 14:56 Passing
+    - 15:02 Period 8
+    - 15:40 End of Day
