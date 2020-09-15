@@ -1,0 +1,23 @@
+#Delete this comment
+
+periods: 
+  - Period 1
+  - Period 2
+  - Period 3
+  - Period 4
+  - Period 5
+  - Lunch
+  - Period 6
+  - Period 7
+  - Period 8
+
+
+normal:
+  name: Normal Schedule
+  schedule: 
+    - 8:15 Period 1
+    - 9:00 Passing
+    - 9:06 Period 2
+    - 9:51 Passing
+    - 9:57 Period 3
+    -
