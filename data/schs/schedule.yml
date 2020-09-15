@@ -2,11 +2,11 @@ defaults:
   start: 9/13/2020
   pattern:
     - weekend
-    - <schedule id>
-    - <schedule id>
-    - <schedule id>
-    - <schedule id>
-    - <schedule id>
+    - normal
+    - chapel
+    - normal
+    - normal
+    - normal
     - weekend
 
 #The following is due to change.
@@ -15,7 +15,6 @@ calendar:
    - 9/7/2020 weekend "Labor Day"
    - 11/11/2020 weekend "Veteran's Day"
    - 11/23/2020-11/27/2020 weekend "Thanksgiving Break"
-   - 12/18/2020 weekend "Non-Student Day"
    - 12/21/2020-1/8/2021 weekend "Winter Break"
    - 1/18/2021 weekend "Martin Luther King Jr. Day"
    - 2/12/2021-2/15/2021 weekend "President Weekend"
