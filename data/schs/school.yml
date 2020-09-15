@@ -5,7 +5,6 @@ periods:
   - Period 3
   - Period 4
   - Period 5
-  - Lunch
   - Period 6
   - Period 7
   - Period 8
@@ -30,7 +29,7 @@ normal:
     - 14:04 Period 7
     - 14:49 Passing
     - 14:55 Period 8
-    - 15:40 End of Day
+    - 15:40 Free
 
 
 chapel:
@@ -54,4 +53,8 @@ chapel:
     - 14:18 Period 7
     - 14:56 Passing
     - 15:02 Period 8
-    - 15:40 End of Day
+    - 15:40 Free
+
+weekend:
+  name: Weekend
+  schedule: ~
