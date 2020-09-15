@@ -1,4 +1,3 @@
-#Delete this comment
 
 periods: 
   - Period 1
@@ -40,3 +39,19 @@ chapel:
     - 8:15 Period 1
     - 8:53 Passing
     - 8:59 Period 2
+    - 9:38 Passing
+    - 9:44 Period 3
+    - 10:23 Passing
+    - 10:29 Chapel
+    - 11:14 Passing
+    - 11:20 Period 4
+    - 12:00 Passing
+    - 12:06 Period 5
+    - 12:46 Lunch
+    - 13:28 Passing
+    - 13:34 Period 6
+    - 14:12 Passing
+    - 14:18 Period 7
+    - 14:56 Passing
+    - 15:02 Period 8
+    - 15:40 End of Day
