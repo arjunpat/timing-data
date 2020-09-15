@@ -20,4 +20,23 @@ normal:
     - 9:06 Period 2
     - 9:51 Passing
     - 9:57 Period 3
-    -
+    - 10:42 Passing
+    - 10:48 Period 4
+    - 11:33 Passing
+    - 11:39 Period 5
+    - 12:25 Lunch
+    - 13:07 Passing
+    - 13:13 Period 6
+    - 13:58 Passing
+    - 14:04 Period 7
+    - 14:49 Passing
+    - 14:55 Period 8
+    - 15:40 End of Day
+
+
+chapel:
+  name: Chapel Schedule
+  schedule:
+    - 8:15 Period 1
+    - 8:53 Passing
+    - 8:59 Period 2
