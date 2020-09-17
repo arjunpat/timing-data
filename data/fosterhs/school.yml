@@ -1,0 +1,60 @@
+periods:
+  - Period 1
+  - Period 2
+  - Period 3
+  - Period 4
+  - Period 5
+  - Period 6
+
+weekend:
+  name: Weekend
+  schedule: ~
+
+mon-tues:
+  name: Mon/Tues Schedule
+  schedule:
+    - 8:15 Work Time
+    - 9:50 Advisory
+    - 10:20 Free
+    - 10:25 Period 1
+    - 11:30 Lunch
+    - 12:15 Period 2
+    - 13:20 Free
+    - 13:25 Period 3
+    - 14:30 Work Time
+    - 15:00 Free
+
+wed:
+  name: Wednesday
+  schedule:
+    - 8:00 Work Time
+    - 10:45 Lunch
+    - 11:30 Period 1
+    - 11:55 Free
+    - 12:00 Period 2
+    - 12:25 Free
+    - 12:30 Period 3
+    - 12:55 Free
+    - 13:00 Period 4
+    - 13:25 Free
+    - 13:30 Period 5
+    - 13:55 Free
+    - 14:00 Period 6
+    - 14:25 Free
+    - 14:30 Work Time
+    - 15:00 Free
+
+
+thurs-fri:
+  name: Thurs/Fri Schedule
+  schedule:
+    - 8:15 Work Time
+    - 9:50 Advisory
+    - 10:20 Free
+    - 10:25 Period 4
+    - 11:30 Lunch
+    - 12:15 Period 5
+    - 13:20 Free
+    - 13:25 Period 6
+    - 14:30 Work Time
+    - 15:00 Free

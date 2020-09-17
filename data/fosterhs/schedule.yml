@@ -1,0 +1,10 @@
+defaults:
+  start: 8/9/2020
+  pattern:
+    - weekend
+    - mon-tues
+    - mon-tues
+    - wed
+    - thurs-fri
+    - thurs-fri
+    - weekend

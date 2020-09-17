@@ -1,28 +1,31 @@
 
 mvhs:
-  name: Mountain View High School
+  name: Mountain View High School, CA
 
 lahs:
-  name: Los Altos High School
+  name: Los Altos High School, CA
   folder: mvhs # optional; only set if different
 
 paly:
-  name: Palo Alto High School
+  name: Palo Alto High School, CA
 
 montavista:
-  name: Monta Vista High School
+  name: Monta Vista High School, CA
 
 lemanmiddle:
-  name: Leman Middle School
+  name: Leman Middle School, IL
 
 smhs:
-  name: San Marcos High School
+  name: San Marcos High School, CA
 
 blach:
-  name: Blach Intermediate School
+  name: Blach Intermediate School, CA
 
 pblhs:
-  name: Palm Beach Lakes High School
+  name: Palm Beach Lakes High School, FL
 
 schs:
-  name: Shiloh Christian School
+  name: Shiloh Christian School, AK
+
+fosterhs:
+  name: Foster High School, WA
