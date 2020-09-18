@@ -1,0 +1,91 @@
+
+periods: 
+  - "0" Period
+  - Period 2
+  - Period 3
+  - Period 4
+  - Period 5
+  - Period 6
+
+
+monday:
+  name: Monday Schedule
+  schedule: 
+    - 7:00 "0" Period
+    - 7:50 Free
+    - 8:00 Student Support
+    - 8:40 Period 1
+    - 10:20 Nutrition
+    - 10:40 Period 3
+    - 12:20 Lunch
+    - 12:50 Period 5
+    - 2:30 Student Support
+    - 3:00 Free
+    
+    
+tuesday:
+  name: Tuesday Schedule
+  schedule: 
+    - 7:00 "0" Period
+    - 7:50 Free
+    - 8:00 Student Support
+    - 8:40 Period 2
+    - 10:20 Nutrition
+    - 10:40 Period 4
+    - 12:20 Lunch
+    - 12:50 Period 6
+    - 2:30 Student Support
+    - 3:00 Free
+
+
+thursday:
+  name: Thursday Schedule
+  schedule: 
+    - 7:00 "0" Period
+    - 7:50 Free
+    - 8:00 Student Support
+    - 8:40 Period 1
+    - 10:20 Nutrition
+    - 10:40 Period 3
+    - 12:20 Lunch
+    - 12:50 Period 5
+    - 2:30 Student Support
+    - 3:00 Free
+    
+    
+friday:
+  name: Friday Schedule
+  schedule: 
+    - 7:00 "0" Period
+    - 7:50 Free
+    - 8:00 Student Support
+    - 8:40 Period 2
+    - 10:20 Nutrition
+    - 10:40 Period 4
+    - 12:20 Lunch
+    - 12:50 Period 6
+    - 2:30 Student Support
+    - 3:00 Free
+
+early:
+  name: Wednesday Schedule
+  schedule:
+    - 7:00 "0" Period
+    - 7:50 Free
+    - 8:00 Period 1
+    - 8:40 Free
+    - 8:50 Period 2
+    - 9:30 Free
+    - 9:40 Period 3
+    - 10:20 Free
+    - 10:30 Period 4
+    - 11:10 Lunch
+    - 11:40 Free
+    - 11:50 Period 5
+    - 12:30 Free
+    - 12:40 Period 6
+    - 13:20 Free
+
+weekend:
+  name: Weekend
+  schedule: ~
