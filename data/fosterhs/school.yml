@@ -25,7 +25,7 @@ mon-tues:
     - 15:00 Free
 
 wed:
-  name: Wednesday
+  name: Wednesday Schedule
   schedule:
     - 8:00 Work Time
     - 10:45 Lunch
