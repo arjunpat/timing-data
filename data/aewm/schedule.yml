@@ -9,6 +9,5 @@ defaults:
     - friday
     - weekend
 
-#School website lacks calendar data.
-
-calendar:
+# School website lacks calendar data
+#calendar:
