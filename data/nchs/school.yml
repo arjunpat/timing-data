@@ -1,0 +1,39 @@
+periods:
+  - Period 1
+  - Period 2
+  - Period 3
+  - Period 4
+  - Period 5
+  - Period 6
+  - Period 7
+  - Period 8
+  - Period 9
+  - Period 10
+
+weekend:
+  name: Weekend
+  schedule: ~
+
+normal:
+  name: Normal Schedule
+  schedule:
+    - 8:00 Period 1
+    - 8:42 Passing
+    - 8:45 Period 2
+    - 9:26 Passing
+    - 9:29 Period 3
+    - 10:10 Passing
+    - 10:13 Period 4
+    - 10:54 Passing
+    - 10:57 Period 5
+    - 11:38 Passing
+    - 11:41 Period 6
+    - 12:22 Passing
+    - 12:25 Period 7
+    - 13:06 Passing
+    - 13:09 Period 8
+    - 13:50 Passing
+    - 13:53 Period 9
+    - 14:34 Passing
+    - 14:40 Period 10
+    - 15:10 Free
