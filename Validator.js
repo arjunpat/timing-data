@@ -160,12 +160,7 @@ class Validator {
   }
 
   parseCalendarArray(arr) {
-    let data = [];
-
-    for (let each of arr)
-      data.push(this.parseCalendarString(each));
-
-    return data;
+    return arr.map(e => this.parseCalendarString(e));
   }
 
   parseCalendarString(str) {
