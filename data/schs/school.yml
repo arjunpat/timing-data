@@ -55,6 +55,16 @@ chapel:
     - 15:02 Period 8
     - 15:40 Free
 
+
+evening-pep:
+  Name: Afternoon Pep Rally
+  schedule:
+    - 8:15 Period 1
+    - 8:53 Passing
+    - 9:01 Period 2
+    - 9:37 Passing
+    - 9:47
+
 weekend:
   name: Weekend
   schedule: ~
