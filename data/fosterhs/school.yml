@@ -7,6 +7,9 @@ periods:
   - Period 5
   - Period 6
 
+non-periods:
+  - Work Time
+
 weekend:
   name: Weekend
   schedule: ~

@@ -9,6 +9,8 @@ periods:
   - Period 7
   - Period 8
 
+non-periods:
+  - Chapel
 
 normal:
   name: Normal Schedule
