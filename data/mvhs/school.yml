@@ -382,4 +382,18 @@ dl-even-block:
 
 dl-work-day:
   name: Work Day
-  schedule: ~
+  schedule:
+    - 9:30 Period 1
+    - 10:00 Free
+    - 10:10 Period 2
+    - 10:40 Free
+    - 10:50 Period 3
+    - 11:20 Free
+    - 11:30 Period 4
+    - 12:00 Lunch
+    - 13:00 Period 5
+    - 13:30 Free
+    - 13:40 Period 6
+    - 14:10 Free
+    - 14:20 Period 7
+    - 14:50 Free
