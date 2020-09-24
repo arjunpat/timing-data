@@ -60,10 +60,26 @@ evening-pep:
   Name: Afternoon Pep Rally
   schedule:
     - 8:15 Period 1
-    - 8:53 Passing
-    - 9:01 Period 2
-    - 9:37 Passing
-    - 9:47
+    - 9:00 Passing
+    - 9:06 Period 2
+    - 9:51 Passing
+    - 9:57 Period 3
+    - 10:42 Passing
+    - 10:48 Period 4
+    - 11:33 Passing
+    - 11:39 Period 5
+    - 12:25 Lunch
+    - 13:07 Passing
+    - 13:13 Period 6
+    - 13:45 Passing
+    - 13:51 Period 7
+    - 14:23 Passing
+    - 14:29 Period 8
+    - 3:00 Dissmiss to Football Field
+    - 3:10 Pep Rally
+    - 3:40 Free
+
+
 
 weekend:
   name: Weekend
