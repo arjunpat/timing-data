@@ -11,6 +11,8 @@ periods:
 
 non-periods:
   - Chapel
+  - Dismiss to Football Field
+  - Pep Rally
 
 normal:
   name: Normal Schedule
@@ -59,7 +61,7 @@ chapel:
 
 
 evening-pep:
-  Name: Afternoon Pep Rally
+  name: Afternoon Pep Rally
   schedule:
     - 8:15 Period 1
     - 9:00 Passing
@@ -77,11 +79,9 @@ evening-pep:
     - 13:51 Period 7
     - 14:23 Passing
     - 14:29 Period 8
-    - 3:00 Dissmiss to Football Field
-    - 3:10 Pep Rally
-    - 3:40 Free
-
-
+    - 15:00 Dismiss to Football Field
+    - 15:10 Pep Rally
+    - 15:40 Free
 
 weekend:
   name: Weekend
