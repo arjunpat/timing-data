@@ -7,6 +7,10 @@ periods:
   - Period 6
   - Period 7
 
+non-periods:
+  - InFocus
+  - Advisory
+
 even:
   name: Even Block
   schedule:

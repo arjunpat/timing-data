@@ -1,196 +1,212 @@
-
-const scheduleItemRegEx = /^[a-zA-Z0-9\s:&/]+$/;
+const validEventRegEx = /^[a-zA-Z0-9\s:&/]+$/;
 const calendarItemRegEx = /^[a-zA-Z0-9\s/"\-'.]+$/;
 
+const defaultNonPeriods = new Set(['Free', 'Brunch', 'Break', 'Lunch', 'Passing'])
+
 class Validator {
-	constructor(school, schedule) {
-		this.errors = {
-			school: [],
-			schedule: []
-		}
+  constructor(school, schedule) {
+    this.errors = {
+      school: [],
+      schedule: []
+    }
 
-		this.school = this.parseSchool(school);
-		this.schedule = this.parseSchedule(schedule);
+    this.school = this.parseSchool(school);
+    this.schedule = this.parseSchedule(schedule);
 
-		this.validate();
-		this.cleanup();
-	}
+    this.validate();
+    this.cleanup();
+  }
 
-	validate() {
-		let mentions = new Set(this.schedule.defaults.pattern);
-		mentions.forEach(p => {
-			if (!this.school.presets[p])
-				this.schoolError(`No preset "${p}" as mentioned in defaults`);
-		});
+  validate() {
+    let mentions = new Set(this.schedule.defaults.pattern);
+    mentions.forEach(p => {
+      if (!this.school.presets[p])
+        this.schoolError(`No preset "${p}" as mentioned in defaults`);
+    });
 
 
-		mentions = new Set(this.schedule.calendar.map(e => e.content.t));
-		mentions.forEach(p => {
-			if (!this.school.presets[p])
-				this.schoolError(`No preset "${p}" as mentioned in calendar`);
-		});
-	}
+    mentions = new Set(this.schedule.calendar.map(e => e.content.t));
+    mentions.forEach(p => {
+      if (!this.school.presets[p])
+        this.schoolError(`No preset "${p}" as mentioned in calendar`);
+    });
+  }
 
-	cleanup() {
-		let mentions = new Set([...this.schedule.calendar.map(i => i.content.t), ...this.schedule.defaults.pattern]);
-		for (let preset in this.school.presets)
-			if (!mentions.has(preset))
-				delete this.school.presets[preset];
-	}
+  cleanup() {
+    let mentions = new Set([...this.schedule.calendar.map(i => i.content.t), ...this.schedule.defaults.pattern]);
+    for (let preset in this.school.presets)
+      if (!mentions.has(preset))
+        delete this.school.presets[preset];
+  }
 
-	schoolError(text) {
-		this.errors.school.push(text);
-	}
+  schoolError(text) {
+    this.errors.school.push(text);
+  }
 
-	scheduleError(text) {
-		this.errors.schedule.push(text);
-	}
+  scheduleError(text) {
+    this.errors.schedule.push(text);
+  }
 
-	hasErrors() {
-		return this.errors.school.length !== 0 || this.errors.schedule.length !== 0;
-	}
+  hasErrors() {
+    return this.errors.school.length !== 0 || this.errors.schedule.length !== 0;
+  }
 
-	getErrors() {
-		return this.errors;
-	}
+  getErrors() {
+    return this.errors;
+  }
 
-	getCleaned() {
-		return {
-			school: this.school,
-			schedule: this.schedule
-		}
-	}
+  getCleaned() {
+    return {
+      school: this.school,
+      schedule: this.schedule
+    }
+  }
 
-	parseSchool(school) {
-		let obj = {
-			periods: school.periods,
-			presets: {}
-		}
-		delete school.periods;
+  parseSchool(school) {
+    let obj = {
+      periods: school.periods,
+      presets: {}
+    }
+    delete school.periods;
 
-		for (let key in school) {
-			obj.presets[key] = {
-				n: (() => {
-					if (typeof school[key].name !== 'string') {
-						this.schoolError(`Preset "${key}" does not have a valid name: a valid name must be a string`);
-					}
-					return school[key].name;
-				})(),
-				s: (() => {
-					if (!school[key].schedule) {
-						return [];
-					} else if (school[key].schedule instanceof Array) {
-						this.checkScheduleArray(school[key].schedule, key);
+    if (!(obj.periods instanceof Array)) {
+      this.schoolError(`Unable to understand "periods"; they must be in the form of an array`);
+      return;
+    }
 
-						return school[key].schedule.join(',');
-					} else {
-						this.schoolError(`Preset "${key}" does not have a valid schedule: a valid schedule must be either an array or null (~)`);
-					}
-				})()
-			}
-		}
+    if (school['non-periods']) {
+      obj.nonPeriods = school['non-periods']
+      delete school['non-periods']
 
-		if (!(obj.periods instanceof Array)) {
-			this.schoolError(`Unable to understand "periods"; they must be in the form of an array`);
-		}
+      for (let each of obj.nonPeriods) {
+        if (obj.periods.includes(each))
+          this.schoolError(`"${each}" cannot be both a period and non-period`);
+        if (defaultNonPeriods.has(each))
+          this.schoolError(`"${each}" is, by default, a non-period. You can remove it from the "non-periods" section`);
+      }
+    }
 
-		return obj;
-	}
+    let validEvents = new Set([...obj.periods, ...(obj.nonPeriods || [])]);
+    for (let each in validEvents) {
+      if (each === 'Free')
+        this.schoolError('"Free" cannot be a period or non-period');
+      if (validEventRegEx.test(each))
+        this.schoolError(`"${each}" is not a valid event name. It includes invalid characters`);
+    }
 
-	getEvent(str) {
-		let i = str.indexOf(' ');
-		return {
-			time: str.substr(0, i),
-			name: str.substr(i + 1, str.length)
-		}
-	}
+    for (let key in school) {
+      obj.presets[key] = {
+        n: (() => {
+          if (typeof school[key].name !== 'string') {
+            this.schoolError(`Preset "${key}" does not have a valid name: a valid name must be a string`);
+          }
+          return school[key].name;
+        })(),
+        s: (() => {
+          if (!school[key].schedule) {
+            return [];
+          } else if (school[key].schedule instanceof Array) {
+            this.checkScheduleArray(school[key].schedule, key, validEvents);
 
-	checkScheduleArray(scheduleArr, presetName) {
-		let last;
-		for (let i = 0; i < scheduleArr.length;) {
-			let str = scheduleArr[i]
-			if (typeof str !== 'string') {
-				this.schoolError(`Preset "${presetName}" has an invalid schedule near (${str}). Not a string.`);
-				i++; continue;
-			}
+            return school[key].schedule.join(',');
+          } else {
+            this.schoolError(`Preset "${key}" does not have a valid schedule: a valid schedule must be either an array or null (~)`);
+          }
+        })()
+      }
+    }
 
-			if (!scheduleItemRegEx.test(str)) this.schoolError(`Preset "${presetName}" has an invalid schedule near (${str}).`);
-			let event = this.getEvent(str);
+    return obj;
+  }
 
-			let time = Date.parse(`1/1/1970 ${event.time}`);
-			if (isNaN(time)) {
-				this.schoolError(`Preset "${presetName}" has an invalid schedule near (${str}). It was unable to parse the time of this event.`);
-			}
-			if (typeof last === 'number' && last >= time) {
-				this.schoolError(`Preset "${presetName}" has an invalid schedule near (${str}). This error is due to the time/format of this line or surrounding lines. Please check that you are using 24 hour time.`);
-			}
-			last = time;
+  getEvent(str) {
+    let i = str.indexOf(' ');
+    return {
+      time: str.substr(0, i),
+      name: str.substr(i + 1, str.length)
+    }
+  }
 
-			if (++i === scheduleArr.length && event.name !== 'Free')
-				this.schoolError(`Preset "${presetName}" has an invalid schedule: it does not end with a "Free" period`);
-		}
-	}
+  checkScheduleArray(scheduleArr, presetName, validEvents) {
+    let last;
+    for (let i = 0; i < scheduleArr.length;) {
+      let str = scheduleArr[i]
+      if (typeof str !== 'string') {
+        this.schoolError(`Preset "${presetName}" has an invalid schedule near (${str}). Not a string.`);
+        i++; continue;
+      }
 
-	parseSchedule(schedule) {
-		if (!schedule.calendar) schedule.calendar = [];
-		schedule.calendar = this.parseCalendarArray(schedule.calendar);
-		return schedule;
-	}
+      let event = this.getEvent(str);
+      if (!validEvents.has(event.name) && !defaultNonPeriods.has(event.name))
+        this.schoolError(`Preset "${presetName}" has an invalid schedule near (${str}). "${event.name}" is not mentioned in "periods" or "non-periods".`);
 
-	parseCalendarArray(arr) {
-		let data = [];
+      let time = Date.parse(`1/1/1970 ${event.time}`);
+      if (isNaN(time))
+        this.schoolError(`Preset "${presetName}" has an invalid schedule near (${str}). It was unable to parse the time of this event.`);
 
-		for (let each of arr)
-			data.push(this.parseCalendarString(each));
+      if (typeof last === 'number' && last >= time)
+        this.schoolError(`Preset "${presetName}" has an invalid schedule near (${str}). This error is due to the time/format of this line or surrounding lines. Please check that you are using 24 hour time.`);
+      last = time;
 
-		return data;
-	}
+      if (++i === scheduleArr.length && event.name !== 'Free')
+        this.schoolError(`Preset "${presetName}" has an invalid schedule: it does not end with a "Free" period`);
+    }
+  }
 
-	parseCalendarString(str) {
-		let original = str;
-		let bad = !calendarItemRegEx.test(str);
+  parseSchedule(schedule) {
+    if (!schedule.calendar) schedule.calendar = [];
+    schedule.calendar = this.parseCalendarArray(schedule.calendar);
+    return schedule;
+  }
 
-		let pieces = str.split('"');
-		let n;
+  parseCalendarArray(arr) {
+    return arr.map(e => this.parseCalendarString(e));
+  }
 
-		// custom name; so remove that part
-		if (pieces.length === 3) {
-			str = pieces[0].trim();
-			n = pieces[1];
-		} else if (pieces.length > 1) // there shouldn't be one "
-			bad = true;
+  parseCalendarString(str) {
+    let original = str;
+    let bad = !calendarItemRegEx.test(str);
 
-		pieces = str.split(' ');
-		bad = bad || pieces.length !== 2;
-		
-		let t = pieces[1];
-		let from, to, date;
+    let pieces = str.split('"');
+    let n;
 
-		if (pieces[0].includes('-')) {
-			pieces = pieces[0].split('-');
-			from = pieces[0];
-			to = pieces[1];
+    // custom name; so remove that part
+    if (pieces.length === 3) {
+      str = pieces[0].trim();
+      n = pieces[1];
+    } else if (pieces.length > 1) // there shouldn't be one "
+      bad = true;
 
-			bad = bad || pieces.length !== 2 || isNaN(Date.parse(from)) || isNaN(Date.parse(to)) || Date.parse(to) <= Date.parse(from);
-		} else {
-			date = pieces[0];
-			bad = bad || isNaN(Date.parse(date));
-		}
+    pieces = str.split(' ');
+    bad = bad || pieces.length !== 2;
+    
+    let t = pieces[1];
+    let from, to, date;
 
-		if (bad)
-			this.scheduleError(`Issue parsing calendar around (${original})`);
+    if (pieces[0].includes('-')) {
+      pieces = pieces[0].split('-');
+      from = pieces[0];
+      to = pieces[1];
 
-		return {
-			date,
-			from,
-			to,
-			content: {
-				n,
-				t
-			}
-		}
-	}
+      bad = bad || pieces.length !== 2 || isNaN(Date.parse(from)) || isNaN(Date.parse(to)) || Date.parse(to) <= Date.parse(from);
+    } else {
+      date = pieces[0];
+      bad = bad || isNaN(Date.parse(date));
+    }
+
+    if (bad)
+      this.scheduleError(`Issue parsing calendar around (${original})`);
+
+    return {
+      date,
+      from,
+      to,
+      content: {
+        n,
+        t
+      }
+    }
+  }
 }
-
 
 module.exports = Validator;

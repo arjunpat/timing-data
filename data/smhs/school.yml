@@ -7,6 +7,11 @@ periods:
   - Period 4
   - Period 7
 
+non-periods:
+  - PLC
+  - Prep
+  - Period 0/7
+
 monday:
   name: Monday Schedule
   schedule: 
@@ -17,7 +22,7 @@ monday:
     - 9:10 Period 2
     - 9:40 Passing
     - 9:50 Period 3
-    - 10:20 Pasing
+    - 10:20 Passing
     - 10:30 Period 4
     - 11:00 Lunch
     - 11:30 Passing

@@ -1,4 +1,3 @@
-
 periods: 
   - 1st Hour
   - 2nd Hour
@@ -8,27 +7,25 @@ periods:
   - 6th Hour
   - 7th Hour
 
-
 normal:
   name: Normal Schedule
   schedule: 
-    - 1st Hour 8:30
-    - Passing 9:22
-    - 2nd Hour 9:25
-    - Passing 10:17
-    - 3rd Hour 10:20
-    - Passing 11:12
-    - Lunch 11:15
-    - 4th Hour 11:50
-    - Passing 12:42
-    - 5th Hour 12:45
-    - Passing 1:37
-    - 6th Hour 1:40
-    - Passing 2:32
-    - 7th Hour 2:35
-    - Free 3:30
-
+    - 8:30 1st Hour
+    - 9:22 Passing
+    - 9:25 2nd Hour
+    - 10:17 Passing
+    - 10:20 3rd Hour
+    - 11:12 Passing
+    - 11:15 Lunch
+    - 11:50 4th Hour
+    - 12:42 Passing
+    - 12:45 5th Hour
+    - 13:37 Passing
+    - 13:40 6th Hour
+    - 14:32 Passing
+    - 14:35 7th Hour
+    - 15:30 Free
 
 weekend:
   name: Weekend
-    schedule: ~
+  schedule: ~

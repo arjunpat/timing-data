@@ -7,6 +7,9 @@ periods:
   - Period 6
   - Period 7
 
+non-periods:
+  - Tutorial
+
 monday:
   name: Monday Schedule
   schedule: 

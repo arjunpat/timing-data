@@ -6,6 +6,11 @@ periods:
   - Period 5
   - Period 6
 
+non-periods:
+  - Advisory
+  - Meet Up
+  - Async Work
+
 monday:
   name: Monday
   schedule:
