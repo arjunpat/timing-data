@@ -1,0 +1,87 @@
+periods: 
+  - Period 1
+  - Period 2
+  - Period 3
+  - Period 4
+  - Period 5
+  - Period 6
+  - Period 7
+  - Period 8
+
+non-periods:
+  - Chapel
+  - Dismiss to Football Field
+  - Pep Rally
+
+normal:
+  name: Normal Schedule
+  schedule: 
+    - 8:15 Period 1
+    - 8:59 Passing
+    - 9:06 Period 2
+    - 9:50 Passing
+    - 9:57 Period 3
+    - 10:41 Passing
+    - 10:48 Period 4
+    - 11:32 Passing
+    - 11:39 Period 5
+    - 12:25 Lunch
+    - 13:06 Passing
+    - 13:13 Period 6
+    - 13:57 Passing
+    - 14:04 Period 7
+    - 14:48 Passing
+    - 14:55 Period 8
+    - 15:40 Free
+
+
+chapel:
+  name: Chapel Schedule
+  schedule:
+    - 8:15 Period 1
+    - 8:52 Passing
+    - 8:59 Period 2
+    - 9:37 Passing
+    - 9:44 Period 3
+    - 10:23 Passing
+    - 10:29 Chapel
+    - 11:13 Passing
+    - 11:20 Period 4
+    - 11:59 Passing
+    - 12:06 Period 5
+    - 12:46 Lunch
+    - 13:28 Passing
+    - 13:34 Period 6
+    - 14:11 Passing
+    - 14:18 Period 7
+    - 14:55 Passing
+    - 15:02 Period 8
+    - 15:40 Free
+
+
+evening-pep:
+  name: Afternoon Pep Rally
+  schedule:
+    - 8:15 Period 1
+    - 9:00 Passing
+    - 9:06 Period 2
+    - 9:51 Passing
+    - 9:57 Period 3
+    - 10:42 Passing
+    - 10:48 Period 4
+    - 11:33 Passing
+    - 11:39 Period 5
+    - 12:25 Lunch
+    - 13:07 Passing
+    - 13:13 Period 6
+    - 13:45 Passing
+    - 13:51 Period 7
+    - 14:23 Passing
+    - 14:29 Period 8
+    - 15:00 Dismiss to Football Field
+    - 15:10 Pep Rally
+    - 15:40 Free
+
+weekend:
+  name: Weekend
+  schedule: ~

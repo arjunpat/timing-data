@@ -1,0 +1,16 @@
+defaults:
+  start: 9/13/2020
+  pattern:
+    - weekend
+    - normal
+    - chapel
+    - normal
+    - normal
+    - normal
+    - weekend
+
+#The following is due to change.
+
+calendar:
+   - 9/25/2020 evening-pep
+
