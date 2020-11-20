@@ -1,0 +1,67 @@
+periods: 
+  - Connections
+  - Period 1
+  - Period 2
+  - Period 3
+  - Period 4
+  - Period 5
+  - Period 6
+  - Period 7
+  - Period 8
+
+non-periods:
+  - Connections
+
+weekend:
+  name: Weekend
+  schedule: ~
+
+dl-odd-block:
+  name: Odd Block
+  schedule:
+    - 8:25 Connections
+    - 8:35 Free
+    - 8:40 Period 1
+    - 9:40 Free
+    - 10:00 Period 3
+    - 11:00 Lunch
+    - 12:00 Period 5
+    - 13:00 Free
+    - 13:15 Period 7
+    - 14:15 Free
+
+dl-even-block:
+  name: Even Block
+  schedule:
+    - 8:25 Connections
+    - 8:35 Free
+    - 8:40 Period 2
+    - 9:40 Free
+    - 10:00 Period 4
+    - 11:00 Lunch
+    - 12:00 Period 6
+    - 13:00 Free
+    - 13:15 Period 8
+    - 14:15 Free
+
+dl-mon:
+  name: 8 Period Day
+  schedule:
+    - 8:25 Connections
+    - 8:35 Free
+    - 8:40 Period 1
+    - 9:05 Free
+    - 9:10 Period 2
+    - 9:40 Free
+    - 10:00 Period 3
+    - 10:25 Free
+    - 10:30 Period 4
+    - 11:00 Lunch
+    - 12:00 Period 5
+    - 12:25 Free
+    - 12:30 Period 6
+    - 13:00 Free
+    - 13:15 Period 7
+    - 13:40 Free
+    - 13:45 Period 8
+    - 14:15 Free

@@ -1,0 +1,25 @@
+defaults:
+  start: 11/23/2020
+  pattern:
+    - dl-mon
+    - dl-odd-block
+    - dl-odd-block
+    - dl-even-block
+    - dl-even-block
+    - weekend
+    - weekend
+
+calendar:
+  - 11/23/2020 dl-even-block
+  - 11/24/2020 dl-mon
+  - 11/25/2020-11/29/2020 weekend "Thanksgiving Break"
+  - 12/22/2020 dl-mon
+  - 12/23/2020-1/3/2021 weekend "Winter Break"
+  - 1/18/2021 weekend "MLK Day"
+  - 2/15/2021 weekend "President's Day"
+  - 3/8/2021 dl-even-block
+  - 3/12/2021-3/21/2021 weekend "Spring Break"
+  - 4/19/2021 dl-even-block
+  - 4/23/2021 weekend "Spring Recess"
+  - 5/31/2021 weekend "Memorial Day"
+  - 6/3/2021-8/22/2021 weekend "School's out for the summer! (sing it)"
