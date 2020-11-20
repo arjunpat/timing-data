@@ -10,7 +10,7 @@ periods:
   - Period 8
 
 non-periods:
-  - Connections
+  - 
 
 weekend:
   name: Weekend
