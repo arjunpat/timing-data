@@ -1,12 +1,12 @@
 defaults:
   start: 11/23/2020
   pattern:
+    - dl-mon
+    - dl-odd-block
+    - dl-odd-block
+    - dl-even-block
+    - dl-even-block
     - weekend
-    - dl-odd-block
-    - dl-even-block
-    - dl-wed
-    - dl-odd-block
-    - dl-even-block
     - weekend
 
 calendar:
