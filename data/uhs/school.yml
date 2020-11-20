@@ -44,7 +44,7 @@ dl-even-block:
     - 13:15 Period 8
     - 14:15 Free
 
-dl-wed:
+dl-mon:
   name: 8 Period Day
   schedule:
     - 8:25 Connections
