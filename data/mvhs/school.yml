@@ -29,13 +29,13 @@ dl-odd-block:
 dl-even-block:
   name: Even Block
   schedule:
-    - 9:30 Period 23
+    - 9:30 Period 2
     - 10:45 Free
     - 11:00 Period 4
     - 12:15 Lunch
     - 13:05 Period 6
     - 14:20 Tutorial
-    - 5:45 Free
+    - 15:45 Free
 
 dl-wed:
   name: Work Day
