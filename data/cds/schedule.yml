@@ -1,0 +1,20 @@
+defaults:
+  start: 1/4/2021
+  pattern:
+    - weekend
+    - dl-hybrid
+    - dl-hybrid
+    - dl-tutoring
+    - dl-hybrid
+    - dl-hybrid
+    - weekend
+
+calendar:
+  # - 1/18/2021 weekend "MLK Day"
+  # - 2/3/2021 Half day
+  # - 2/15/2021 weekend "Presidents' Day"
+  # - 3/8/2021 - 3/12/2021 weekend "Spring Break"
+  # - 4/1/2021 weekend "Holiday"
+  # - 5/17/2021 - 5/19/2021 finals "Final Exam"
+  # - 5/20/2021 - weekend "Graduation"
+
