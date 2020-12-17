@@ -54,3 +54,33 @@ dl-wed:
     - 14:10 Free
     - 14:20 Period 7
     - 14:50 Free
+
+dl-finals-tues:
+  name: Tuesday Finals
+  schedule:
+    - 9:30 Period 3
+    - 11:15 Free
+    - 13:05 Period 5
+    - 14:45 Free
+
+dl-finals-wed:
+  name: Wednesday Finals
+  schedule:
+    - 9:30 Period 2
+    - 11:15 Free
+    - 13:05 Period 7
+    - 14:45 Free
+
+dl-finals-thurs:
+  name: Thursday Finals
+  schedule:
+    - 9:30 Period 1
+    - 11:15 Free
+    - 13:05 Period 4
+    - 14:45 Free
+
+dl-finals-fri:
+  name: Friday Finals
+  schedule:
+    - 9:30 Period 6
+    - 11:15 Free

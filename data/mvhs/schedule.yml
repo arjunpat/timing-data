@@ -53,4 +53,8 @@ calendar:
   # - 9/8/2020 dl-odd-block
   # - 9/9/2020 dl-even-block
   - 11/21/2020-11/29/2020 weekend "Thanksgiving Break"
-  - 12/15/2020 dl-odd-block
+  - 12/16/2020 dl-finals-wed
+  - 12/17/2020 dl-finals-thurs
+  - 12/18/2020 dl-finals-fri
+  - 12/19/2020-1/4/2021 weekend "Holiday Break"
+
