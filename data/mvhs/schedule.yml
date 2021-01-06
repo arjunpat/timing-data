@@ -32,7 +32,7 @@ calendar:
   # - 12/21/2019-1/6/2020 weekend "Holiday Break"
   # - 1/7/2020 A
   # - 1/13/2020 tutorial
-  # - 1/20/2020 weekend "MLK Day"
+  # - 1/20/2020 weekend "MLK Holiday"
   # - 1/21/2020 advisory-odd-block
   # - 1/22/2020 advisory-even-block
   # - 1/23/2020 tutorial
@@ -59,3 +59,6 @@ calendar:
   - 12/19/2020-1/4/2021 weekend "Holiday Break"
   - 1/5/2021 dl-odd-block
   - 1/6/2021 dl-even-block
+  - 1/18/2021 weekend "MLK Holiday"
+  - 1/19/2021 dl-odd-block
+  - 1/20/2021 dl-even-block
