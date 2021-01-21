@@ -84,3 +84,15 @@ dl-finals-fri:
   schedule:
     - 9:30 Period 6
     - 11:15 Free
+
+dl-advisory-odd:
+  name: Odd Advisory
+  schedule:
+    - 9:30 Period 1
+    - 10:40 Free
+    - 10:50 Period 3
+    - 12:20 Lunch
+    - 13:15 Period 5
+    - 14:25 Free
+    - 14:35 Period 7
+    - 15:45 Free

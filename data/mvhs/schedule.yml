@@ -52,15 +52,16 @@ calendar:
   # - 9/7/2020 weekend "Labor Day"
   # - 9/8/2020 dl-odd-block
   # - 9/9/2020 dl-even-block
-  - 11/21/2020-11/29/2020 weekend "Thanksgiving Break"
-  - 12/16/2020 dl-finals-wed
-  - 12/17/2020 dl-finals-thurs
-  - 12/18/2020 dl-finals-fri
-  - 12/19/2020-1/4/2021 weekend "Holiday Break"
-  - 1/5/2021 dl-odd-block
-  - 1/6/2021 dl-even-block
-  - 1/18/2021 weekend "MLK Holiday"
-  - 1/19/2021 dl-odd-block
-  - 1/20/2021 dl-even-block
+  # - 11/21/2020-11/29/2020 weekend "Thanksgiving Break"
+  # - 12/16/2020 dl-finals-wed
+  # - 12/17/2020 dl-finals-thurs
+  # - 12/18/2020 dl-finals-fri
+  # - 12/19/2020-1/4/2021 weekend "Holiday Break"
+  # - 1/5/2021 dl-odd-block
+  # - 1/6/2021 dl-even-block
+  # - 1/18/2021 weekend "MLK Holiday"
+  # - 1/19/2021 dl-odd-block
+  # - 1/20/2021 dl-even-block
+  - 1/21/2021 dl-advisory-odd
   - 1/26/2021 dl-wed "Async/PSAT Testing"
   - 1/27/2021 dl-even-block
