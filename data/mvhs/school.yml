@@ -8,7 +8,7 @@ periods:
   - Period 7
 
 non-periods:
-  - Tutorial
+  - Office Hours
 
 weekend:
   name: Weekend
@@ -34,7 +34,7 @@ dl-even-block:
     - 11:00 Period 4
     - 12:15 Lunch
     - 13:05 Period 6
-    - 14:20 Tutorial
+    - 14:20 Office Hours
     - 15:45 Free
 
 dl-wed:
@@ -95,4 +95,15 @@ dl-advisory-odd:
     - 13:15 Period 5
     - 14:25 Free
     - 14:35 Period 7
+    - 15:45 Free
+
+dl-advisory-even:
+  name: Even Advisory
+  schedule:
+    - 9:30 Period 2
+    - 10:40 Free
+    - 10:50 Period 4
+    - 12:20 Lunch
+    - 13:15 Period 6
+    - 14:25 Office Hours
     - 15:45 Free
