@@ -48,4 +48,6 @@ for (let key in obj) {
 }
 obj.schools = schools;
 
+console.log(obj);
+
 module.exports = obj;

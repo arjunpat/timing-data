@@ -108,7 +108,7 @@ class Validator {
           } else if (school[key].schedule instanceof Array) {
             this.checkScheduleArray(school[key].schedule, key, validEvents);
 
-            return school[key].schedule;
+            return this.parseScheduleArray(school[key].schedule);
           } else {
             this.schoolError(`Preset "${key}" does not have a valid schedule: a valid schedule must be either an array or null (~)`);
           }
@@ -161,6 +161,21 @@ class Validator {
 
   parseCalendarArray(arr) {
     return arr.map(e => this.parseCalendarString(e));
+  }
+
+  parseScheduleArray(arr) {
+    let data = [];
+
+    for (let str of arr) {
+      let s = str.indexOf(' ');
+
+      data.push({
+        f: str.substr(0, s),
+        n: str.substr(s + 1)
+      });
+    }
+
+    return data;
   }
 
   parseCalendarString(str) {
