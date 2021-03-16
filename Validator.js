@@ -108,7 +108,7 @@ class Validator {
           } else if (school[key].schedule instanceof Array) {
             this.checkScheduleArray(school[key].schedule, key, validEvents);
 
-            return school[key].schedule.join(',');
+            return school[key].schedule;
           } else {
             this.schoolError(`Preset "${key}" does not have a valid schedule: a valid schedule must be either an array or null (~)`);
           }
