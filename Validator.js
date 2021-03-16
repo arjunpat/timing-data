@@ -122,9 +122,18 @@ class Validator {
   getEvent(str) {
     let i = str.indexOf(' ');
     return {
-      time: str.substr(0, i),
-      name: str.substr(i + 1, str.length)
+      f: str.substr(0, i),
+      n: str.substr(i + 1, str.length)
     }
+  }
+
+  parseScheduleArray(arr) {
+    let data = [];
+
+    for (let str of arr)
+      data.push(this.getEvent(str));
+
+    return data;
   }
 
   checkScheduleArray(scheduleArr, presetName, validEvents) {
@@ -137,10 +146,10 @@ class Validator {
       }
 
       let event = this.getEvent(str);
-      if (!validEvents.has(event.name) && !defaultNonPeriods.has(event.name))
-        this.schoolError(`Preset "${presetName}" has an invalid schedule near (${str}). "${event.name}" is not mentioned in "periods" or "non-periods".`);
+      if (!validEvents.has(event.n) && !defaultNonPeriods.has(event.n))
+        this.schoolError(`Preset "${presetName}" has an invalid schedule near (${str}). "${event.n}" is not mentioned in "periods" or "non-periods".`);
 
-      let time = Date.parse(`1/1/1970 ${event.time}`);
+      let time = Date.parse(`1/1/1970 ${event.f}`);
       if (isNaN(time))
         this.schoolError(`Preset "${presetName}" has an invalid schedule near (${str}). It was unable to parse the time of this event.`);
 
@@ -148,7 +157,7 @@ class Validator {
         this.schoolError(`Preset "${presetName}" has an invalid schedule near (${str}). This error is due to the time/format of this line or surrounding lines. Please check that you are using 24 hour time.`);
       last = time;
 
-      if (++i === scheduleArr.length && event.name !== 'Free')
+      if (++i === scheduleArr.length && event.n !== 'Free')
         this.schoolError(`Preset "${presetName}" has an invalid schedule: it does not end with a "Free" period`);
     }
   }
@@ -161,21 +170,6 @@ class Validator {
 
   parseCalendarArray(arr) {
     return arr.map(e => this.parseCalendarString(e));
-  }
-
-  parseScheduleArray(arr) {
-    let data = [];
-
-    for (let str of arr) {
-      let s = str.indexOf(' ');
-
-      data.push({
-        f: str.substr(0, s),
-        n: str.substr(s + 1)
-      });
-    }
-
-    return data;
   }
 
   parseCalendarString(str) {
