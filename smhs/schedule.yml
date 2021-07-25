@@ -1,23 +1,23 @@
 defaults:
-  start: 08/18/2020
+  start: 08/17/2021
   pattern:
     - weekend
-    - monday
-    - tuesday-friday
-    - tuesday-friday
-    - tuesday-friday
-    - tuesday-friday
+    - monday-friday
+    - tuesday
+    - wednesday
+    - thursday
+    - monday-friday
     - weekend
 
 calendar:
-   - 8/18/2020-8/28/2020 monday "Minimum Day"
-   - 9/7/2020 weekend "Labor Day"
-   - 11/11/2020 weekend "Veteran's Day"
-   - 11/23/2020-11/27/2020 weekend "Thanksgiving Break"
-   - 12/18/2020 weekend "Non-Student Day"
-   - 12/21/2020-1/8/2021 weekend "Winter Break"
-   - 1/18/2021 weeekend "Martin Luther King Jr. Day"
-   - 2/12/2021-2/15/2021 weekend "President Weekend"
-   - 3/29/2021-4/2/2021 weekend "Spring Break"
-   - 5/31/2021 weekend "Memorial Day"
-   - 6/9/2021 monday "Last Day Of School"
+   - 9/6/2021 weekend "Labor Day"
+   - 11/11/2021-11/12/2021 weekend "Veteran's Day"
+   - 11/22/2021-11/26/2021 weekend "Thanksgiving Break"
+   - 12/17/2021 weekend "Non-Student Day"
+   - 12/20/2021-1/7/2022 weekend "Winter Break"
+   - 1/17/2022 weekend "Martin Luther King Jr. Day"
+   - 2/18/2022 weekend "Washington's Birthday"
+   - 2/21/2022 weekend "President's Day"
+   - 3/28/2022-4/1/2022 weekend "Spring Break"
+   - 5/30/2022 weekend "Memorial Day"
+   - 6/9/2022 minimum "Last Day Of School"

@@ -4,46 +4,77 @@ periods:
   - Period 2
   - Period 3
   - Period 4
-  - Period 7
+  - Period 5
+  - Period 6
 
-Monday:
-  name: Monday Schedule
+monday-friday:
+  name: Monday/Friday Schedule
   schedule: 
-    - 7:50 Period 0/7
+    - 7:15 Period 0
     - 8:20 Passing
     - 8:30 Period 1
-    - 9:00 Passing
-    - 9:10 Period 2
-    - 9:40 Passing
-    - 9:50 Period 3
-    - 10:20 Pasing
-    - 10:30 Period 4
-    - 11:00 Lunch
-    - 11:30 Passing
-    - 11:35 PLC
-    - 13:15 Prep
-    - 15:45 Free
+    - 9:26 Passing
+    - 9:32 Period 2
+    - 10:28 Break/Passing
+    - 10:41 Period 3
+    - 11:43 Pasing
+    - 11:49 Period 4
+    - 12:45 Lunch
+    - 13:15 Passing
+    - 13:21 Period 5
+    - 14:17 Passing
+    - 14:23 Period 6
+    - 15:19 Free
 
-tuesday-friday:
-  name: Tuesday-Friday Schedule
+tuesday:
+  name: Tuesday Schedule
   schedule:
-    - 7:00 Period 0
+    - 7:55 Meetings
+    - 8:55 Teacher Break
+    - 9:13 Period 1
+    - 10:03 Passing
+    - 10:09 Period 2
+    - 10:59 Passing
+    - 11:05 Period 3
+    - 12:01 Passing
+    - 12:07 Period 4
+    - 12:57 Lunch
+    - 13:27 Passing
+    - 13:33 Period 5
+    - 14:23 Passing
+    - 14:29 Period 6
+    - 15:19 Free
+
+wednesday:
+  name: Wednesday/Thursday Schedule
+  schedule:
+    - 7:15 Period 0
     - 8:20 Passing
     - 8:30 Period 1
-    - 9:50 Passing
-    - 10:00 Period 2
-    - 11:20 Passing
-    - 11:30 Advisory
-    - 12:00 Passing
-    - 12:10 Lunch
-    - 12:40 Passing
-    - 12:50 Period 3
-    - 14:10 Passing
-    - 14:20 Period 4
-    - 15:40 Passing
-    - 15:50 Period 7
-    - 16:50 Free
+    - 10:28 Break/Passing
+    - 10:41 Period 3
+    - 12:45 Lunch
+    - 13:15 Passing
+    - 13:21 Period 5
+    - 15:19 Free
 
+thursday:
+  name: Wednesday/Thursday Schedule
+  schedule:
+    - 7:15 Period 0
+    - 8:20 Passing
+    - 8:30 Period 2
+    - 10:28 Break/Passing
+    - 10:41 Period 4
+    - 12:45 Lunch
+    - 13:15 Passing
+    - 13:21 Period 6
+    - 15:19 Free
+
+minimum:
+  name: Minimum Day
+  schedule:
+    - 7:15 TBA will update
 
 weekend:
   name: Weekend
