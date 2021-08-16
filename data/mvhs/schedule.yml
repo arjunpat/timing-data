@@ -1,5 +1,5 @@
 defaults:
-  start: 8/15/2021
+  start: 8/8/2021
   pattern:
     - weekend
     - schedule-a
