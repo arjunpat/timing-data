@@ -8,11 +8,60 @@ periods:
   - Period 7
 
 non-periods:
+  - Tutorial
   - Office Hours
 
 weekend:
   name: Weekend
   schedule: ~
+
+
+schedule-a:
+  name: Schedule A
+  schedule:
+    - 8:40 Period 1
+    - 9:25 Free
+    - 9:32 Period 2
+    - 10:22 Brunch
+    - 10:32 Free
+    - 10:39 Period 3
+    - 11:24 Free
+    - 11:31 Period 4
+    - 12:16 Lunch
+    - 13:01 Free
+    - 13:08 Period 5
+    - 13:53 Free
+    - 14:00 Period 6
+    - 14:45 Free
+    - 14:52 Period 7
+    - 15:37 Free
+
+schedule-b:
+  name: Schedule B
+  schedule:
+    - 8:40 Period 1
+    - 10:10 Brunch
+    - 10:20 Free
+    - 10:27 Period 3
+    - 11:52 Lunch
+    - 12:37 Free
+    - 12:44 Period 5
+    - 14:09 Free
+    - 14:16 Period 7
+    - 15:41 Free
+
+schedule-c:
+  name: Schedule C
+  schedule:
+    - 8:40 Period 2
+    - 10:10 Tutorial
+    - 11:00 Brunch
+    - 11:10 Free
+    - 11:17 Period 4
+    - 12:42 Lunch
+    - 13:27 Free
+    - 13:34 Period 6
+    - 14:59 Free
 
 dl-odd-block:
   name: Odd Block

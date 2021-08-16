@@ -1,12 +1,12 @@
 defaults:
-  start: 8/9/2020
+  start: 8/15/2021
   pattern:
     - weekend
-    - dl-odd-block
-    - dl-even-block
-    - dl-wed
-    - dl-odd-block
-    - dl-even-block
+    - schedule-a
+    - schedule-b
+    - schedule-c
+    - schedule-b
+    - schedule-c
     - weekend
 
 calendar:
@@ -70,8 +70,8 @@ calendar:
   # - 3/15/2021 weekend "No School"
   # - 3/16/2021 dl-odd-block
   # - 3/17/2021 dl-even-block
-  - 4/10/2021-4/18/2021 weekend "Spring Break"
-  - 4/27/2021 dl-wed "Async/SAT Testing"
-  - 4/28/2021 dl-even-block
-  - 5/31/2021 weekend "Memorial Day"
-  - 6/5/2021-8/16/2021 weekend "Summer Break"
+  # - 4/10/2021-4/18/2021 weekend "Spring Break"
+  # - 4/27/2021 dl-wed "Async/SAT Testing"
+  # - 4/28/2021 dl-even-block
+  # - 5/31/2021 weekend "Memorial Day"
+  # - 6/5/2021-8/16/2021 weekend "Summer Break"
