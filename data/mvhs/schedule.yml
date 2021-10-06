@@ -75,3 +75,6 @@ calendar:
   # - 4/28/2021 dl-even-block
   # - 5/31/2021 weekend "Memorial Day"
   # - 6/5/2021-8/16/2021 weekend "Summer Break"
+  - 10/7/2021 schedule-a
+  - 10/8/2021 schedule-f
+  - 10/9/2021-10/12/2021 weekend "End of Quarter/HOCO Break"
