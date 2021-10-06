@@ -78,3 +78,14 @@ calendar:
   - 10/7/2021 schedule-a
   - 10/8/2021 schedule-f
   - 10/9/2021-10/12/2021 weekend "End of Quarter/HOCO Break"
+  - 11/8/2021 schedule-b
+  - 11/9/2021 schedule-c
+  - 11/10/2021 schedule-b
+  - 11/11/2021 weekend "Veterans Day"
+  - 11/12/2021 schedule-c
+  - 11/20/2021-11/28/2021 weekend "Thanksgiving Break"
+  - 12/18/2021-1/3/2022 weekend "Winter Break"
+  - 1/17/2021 weekend "Martin Luther King Jr. Day"
+  - 2/19/2021-2/27/2021 weekend "Presidents Week Holiday"
+  - 3/13/2021-3/15/2021 weekend "Three Day Weekend"
+  - 4/9/2021-4/17/2021 weekend "Spring Break"
