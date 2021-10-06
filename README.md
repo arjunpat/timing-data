@@ -38,7 +38,7 @@ Add each of the possible daily schedules to the file, following the frame for `d
 ## 5. schedule.yml
 **Similar to last time, use `data/mvhs/schedule.yml` file as a frame**
 
-The `defaults` section allows you to specify a recurring order of schedules that begins on a certain `start` date and cycles indefinetly.
+The `defaults` section allows you to specify a recurring order of schedules that begins on a certain `start` date and cycles indefinitely.
 
 The `calendar` section allow you to override the defaults on specific days or date ranges.
 
