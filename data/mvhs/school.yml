@@ -1,4 +1,4 @@
-periods: 
+periods:
   - Period 1
   - Period 2
   - Period 3
@@ -10,11 +10,12 @@ periods:
 non-periods:
   - Tutorial
   - Office Hours
+  - Period 2A
+  - Period 2B
 
 weekend:
   name: Weekend
   schedule: ~
-
 
 schedule-a:
   name: Schedule A
@@ -62,6 +63,98 @@ schedule-c:
     - 13:27 Free
     - 13:34 Period 6
     - 14:59 Free
+
+schedule-d:
+  name: Schedule D
+  schedule:
+    - 11:30 Period 1
+    - 12:15 Lunch
+    - 13:00 Free
+    - 13:07 Period 3
+    - 13:52 Free
+    - 13:59 Period 5
+    - 14:44 Free
+    - 14:51 Period 7
+    - 15:36 Free
+
+schedule-e:
+  name: Schedule E
+  schedule:
+    - 11:30 Period 2
+    - 12:15 Lunch
+    - 13:00 Free
+    - 13:07 Period 4
+    - 13:52 Free
+    - 13:59 Period 6
+    - 14:44 Free
+
+schedule-f:
+  name: Schedule F (Minimum Day)
+  schedule:
+    - 8:40 Period 1
+    - 9:08 Free
+    - 9:15 Period 2
+    - 9:43 Free
+    - 9:50 Period 3
+    - 10:18 Free
+    - 10:25 Period 4
+    - 10:53 Brunch
+    - 11:03 Free
+    - 11:10 Period 5
+    - 11:38 Free
+    - 11:45 Period 6
+    - 12:13 Free
+    - 12:20 Period 7
+    - 12:48 Free
+
+schedule-g:
+  name: Schedule G (Rally)
+  schedule:
+    - 8:40 Period 1
+    - 9:20 Free
+    - 9:27 Period 2A
+    - 10:07 Free
+    - 10:14 Period 2B
+    - 10:54 Brunch
+    - 11:04 Free
+    - 11:11 Period 3
+    - 11:51 Free
+    - 11:58 Period 4
+    - 12:38 Lunch
+    - 13:18 Free
+    - 13:23 Period 5
+    - 14:03 Free
+    - 14:11 Period 6
+    - 14:51 Free
+    - 14:58 Period 7
+    - 15:38 Free
+
+schedule-h:
+  name: Schedule H
+  schedule:
+    - 8:40 Period 1
+    - 9:25 Free
+    - 9:32 Period 3
+    - 10:22 Brunch
+    - 10:32 Free
+    - 10:39 Period 5
+    - 11:24 Free
+    - 11:31 Period 7
+    - 12:16 Lunch
+    - 13:00 Free
+
+schedule-i:
+  name: Schedule I
+  schedule:
+    - 8:40 Period 2
+    - 9:25 Free
+    - 9:32 Period 4
+    - 10:22 Brunch
+    - 10:32 Free
+    - 10:39 Period 6
+    - 11:24 Free
+    - 12:24 Lunch
+    - 13:10 Free
 
 dl-odd-block:
   name: Odd Block
