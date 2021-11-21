@@ -156,6 +156,39 @@ schedule-i:
     - 12:24 Lunch
     - 13:10 Free
 
+finals-dec-2021-tues:
+  name: Tuesday Finals
+  schedule:
+    - 8:40 Period 1
+    - 10:25 Brunch
+    - 10:55 Free
+    - 11:02 Period 6
+    - 12:47 Free
+
+finals-dec-2021-wed:
+  name: Wednesday Finals
+  schedule:
+    - 8:40 Period 2
+    - 10:25 Brunch
+    - 10:55 Free
+    - 11:02 Period 5
+    - 12:47 Free
+
+finals-dec-2021-thurs:
+  name: Thursday Finals
+  schedule:
+    - 8:40 Period 3
+    - 10:25 Brunch
+    - 10:55 Free
+    - 11:02 Period 7
+    - 12:47 Free
+
+finals-dec-2021-fri:
+  name: Friday Finals
+  schedule:
+    - 8:40 Period 4
+    - 10:25 Free
+
 dl-odd-block:
   name: Odd Block
   schedule:
