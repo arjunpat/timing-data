@@ -26,7 +26,7 @@ calendar:
   - 12/8/2021 early-other "Kids Who Care Day"
   - 12/15/2021 gold
   - 12/22/2021 other "Teen Issue Day"
-  - 12/23/2021-1/3/2022 weekend "Holiday Break"
+  - 12/23/2021-1/3/2021 weekend "Holiday Break"
   - 1/12/2021 gold
   - 1/26/2021 late-gold
   - 2/9/2021 early-gold
@@ -46,4 +46,4 @@ calendar:
   - 5/25/2021 late-black
   - 5/30/2021 weekend
   - 6/8/2021 other "Advisee Day Out"
-  - 6/17/2021 gold "Last Day"
+  - 6/17/2021 gold "Last Day (if normal)"
