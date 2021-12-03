@@ -1,0 +1,156 @@
+periods:
+  - Period B1
+  - Period B2
+  - Period B3
+  - Period B4
+  - Period G5
+  - Period G6
+  - Period G7
+  - Period G8
+
+non-periods:
+  - Advisee
+  - Lunch/Advisee A
+  - Lunch/Advisee B
+  - Bus Dismissal
+
+weekend:
+  name: Weekend
+  schedule: ~
+
+black:
+  name: Black Day
+  schedule:
+    - 8:00 Advisee
+    - 8:16 Passing
+    - 8:20 Period B1
+    - 9:31 Passing
+    - 9:35 Period B2
+    - 10:46 Passing
+    - 10:50 Lunch/Advisee A
+    - 11:16 Passing
+    - 11:19 Advisee
+    - 11:22 Passing
+    - 11:25 Lunch/Advisee B
+    - 11:51 Passing
+    - 11:55 Period B3
+    - 13:06 Passing
+    - 13:10 Period B4
+    - 14:21 Bus Dismissal
+    - 14:30 Free
+
+gold:
+  name: Gold Day
+  schedule:
+    - 8:00 Advisee
+    - 8:16 Passing
+    - 8:20 Period G5
+    - 9:31 Passing
+    - 9:35 Period G6
+    - 10:46 Passing
+    - 10:50 Lunch/Advisee A
+    - 11:16 Passing
+    - 11:19 Advisee
+    - 11:22 Passing
+    - 11:25 Lunch/Advisee B
+    - 11:51 Passing
+    - 11:55 Period G7
+    - 13:06 Passing
+    - 13:10 Period G8
+    - 14:21 Bus Dismissal
+    - 14:30 Free
+
+late-black:
+  name: Black Late Start Wednesday
+  schedule:
+    - 9:00 Advisee
+    - 9:05 Passing
+    - 9:09 Period B1
+    - 10:08 Passing
+    - 10:12 Period B2
+    - 11:11 Passing
+    - 11:15 Lunch/Advisee A
+    - 11:41 Passing
+    - 11:44 Advisee
+    - 11:46 Passing
+    - 11:49 Lunch/Advisee B
+    - 12:15 Passing
+    - 12:19 Period B3
+    - 13:18 Passing
+    - 13:22 Period B4
+    - 14:21 Bus Dismissal
+    - 14:30 Free
+
+late-gold:
+  name: Gold Late Start Wednesday
+  schedule:
+    - 9:00 Advisee
+    - 9:05 Passing
+    - 9:09 Period G5
+    - 10:08 Passing
+    - 10:12 Period G6
+    - 11:11 Passing
+    - 11:15 Lunch/Advisee A
+    - 11:41 Passing
+    - 11:44 Advisee
+    - 11:46 Passing
+    - 11:49 Lunch/Advisee B
+    - 12:15 Passing
+    - 12:19 Period G7
+    - 13:18 Passing
+    - 13:22 Period G8
+    - 14:21 Bus Dismissal
+    - 14:30 Free
+
+early-black:
+  name: Black Early Release
+  schedule:
+    - 8:00 Advisee
+    - 8:05 Passing
+    - 8:09 Period B1
+    - 8:41 Passing
+    - 8:45 Period B2
+    - 9:17 Passing
+    - 9:21 Period B3
+    - 9:53 Passing
+    - 9:57 Period B4
+    - 10:29 Passing
+    - 10:33 Lunch/Advisee A
+    - 10:58 Passing
+    - 11:01 Advisee
+    - 11:03 Passing
+    - 11:06 Lunch/Advisee B
+    - 11:31 Free
+
+early-gold:
+  name: Gold Early Release
+  schedule:
+    - 8:00 Advisee
+    - 8:05 Passing
+    - 8:09 Period G5
+    - 8:41 Passing
+    - 8:45 Period G6
+    - 9:17 Passing
+    - 9:21 Period G7
+    - 9:53 Passing
+    - 9:57 Period G8
+    - 10:29 Passing
+    - 10:33 Lunch/Advisee A
+    - 10:58 Passing
+    - 11:01 Advisee
+    - 11:03 Passing
+    - 11:06 Lunch/Advisee B
+    - 11:31 Free
+
+other:
+  name: Other
+  schedule:
+    - 8:00 School
+    - 14:21 Bus Dismissal
+    - 14:30 Free
+
+early-other:
+  name: Other Early Release
+  schedule:
+    - 8:00 School
+    - 11:31 Free

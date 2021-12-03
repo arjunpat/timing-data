@@ -41,3 +41,7 @@ nchs:
 
 uhs:
   name: Urbandale High School, IA
+
+mchs:
+  name: Maranacook Community High School
+  live: false
