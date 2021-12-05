@@ -12,6 +12,7 @@ non-periods:
   - Advisee
   - Lunch/Advisee A
   - Lunch/Advisee B
+  - Bus Dismissal
 
 weekend:
   name: Weekend
@@ -144,12 +145,12 @@ early-gold:
 other:
   name: Other
   schedule:
-    - 8:00 School
+    - 8:00 Other
     - 14:21 Buss Dismissal
     - 14:30 Free
 
 early-other:
   name: Other Early Release
   schedule:
-    - 8:00 School
+    - 8:00 Other
     - 11:31 Free
