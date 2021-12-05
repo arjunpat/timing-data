@@ -13,6 +13,7 @@ non-periods:
   - Lunch/Advisee A
   - Lunch/Advisee B
   - Bus Dismissal
+  - Other
 
 weekend:
   name: Weekend
