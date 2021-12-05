@@ -144,14 +144,14 @@ early-gold:
     - 11:31 Free
 
 other:
-  name: Other
+  name: Non Academic/Other
   schedule:
     - 8:00 Other
-    - 14:21 Buss Dismissal
+    - 14:21 Bus Dismissal
     - 14:30 Free
 
 early-other:
-  name: Other Early Release
+  name: Non Academic/Other Early Release
   schedule:
     - 8:00 Other
     - 11:31 Free
