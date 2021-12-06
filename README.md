@@ -27,7 +27,7 @@ Each school has a folder to store it's schedule data. Those folders can be found
 ## 4. school.yml
 Schedule data is stored in two files within the folder you just created. If you poke around some other schools, you'll see a `school.yml` file and a `schedule.yml` file.
 
-**To best complete this file, we recommend you use the `data/mvhs/school.yml` file as a frame.**
+**To best complete this file, we recommend you use the `data/mvhs/school.yml` file as a template.**
 
 Fill out the `periods` section of this file with the periods that students should be able to name or add meeting links to (not "Lunch" or "Brunch").
 
@@ -36,7 +36,7 @@ Add each of the possible daily schedules to the file, following the frame for `d
 **Do the best you can here. We'll review your work before merging it and can fix any errors.**
 
 ## 5. schedule.yml
-**Similar to last time, use `data/mvhs/schedule.yml` file as a frame**
+**Similar to last time, use `data/mvhs/schedule.yml` file as a template**
 
 The `defaults` section allows you to specify a recurring order of schedules that begins on a certain `start` date and cycles indefinitely.
 
