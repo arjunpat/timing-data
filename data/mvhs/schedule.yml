@@ -75,19 +75,19 @@ calendar:
   # - 4/28/2021 dl-even-block
   # - 5/31/2021 weekend "Memorial Day"
   # - 6/5/2021-8/16/2021 weekend "Summer Break"
-  - 10/7/2021 schedule-a
-  - 10/8/2021 schedule-f
-  - 10/9/2021-10/12/2021 weekend "End of Quarter/HOCO Break"
-  - 11/8/2021 schedule-b
-  - 11/9/2021 schedule-c
-  - 11/10/2021 schedule-b
-  - 11/11/2021 weekend "Veterans Day"
-  - 11/12/2021 schedule-c
-  - 11/20/2021-11/28/2021 weekend "Thanksgiving Break"
-  - 12/14/2021 finals-dec-2021-tues
-  - 12/15/2021 finals-dec-2021-wed
-  - 12/16/2021 finals-dec-2021-thurs
-  - 12/17/2021 finals-dec-2021-fri
+  # - 10/7/2021 schedule-a
+  # - 10/8/2021 schedule-f
+  # - 10/9/2021-10/12/2021 weekend "End of Quarter/HOCO Break"
+  # - 11/8/2021 schedule-b
+  # - 11/9/2021 schedule-c
+  # - 11/10/2021 schedule-b
+  # - 11/11/2021 weekend "Veterans Day"
+  # - 11/12/2021 schedule-c
+  # - 11/20/2021-11/28/2021 weekend "Thanksgiving Break"
+  # - 12/14/2021 finals-dec-2021-tues
+  # - 12/15/2021 finals-dec-2021-wed
+  # - 12/16/2021 finals-dec-2021-thurs
+  # - 12/17/2021 finals-dec-2021-fri
   - 12/18/2021-1/3/2022 weekend "Holiday Break"
   - 1/17/2022 weekend "MLK Jr. Day"
   - 1/24/2022 schedule-g
@@ -97,5 +97,5 @@ calendar:
   - 3/13/2022-3/15/2022 weekend "Three Day Weekend"
   - 4/9/2022-4/17/2022 weekend "Spring Break"
   - 5/30/2022 weekend "Memorial Day"
-  # The start of the 2022-23 school year is to be announced, 8/14/2022 is only a placeholder for now
+  # The start of the 2022-23 school year is to be announced, 8/16/2022 is only a placeholder for now
   - 6/8/2022-8/16/2022 weekend "Summer Vacation"
