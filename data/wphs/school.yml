@@ -1,0 +1,288 @@
+periods:
+  - Period 1
+  - Period 2
+  - Period 3
+  - Period 4
+  - Period 5
+  - Period 6
+  - Period 7
+  - Period 8
+  - Period 8 / Lunch 1 Start
+  - Period 8 / Lunch 1 End
+  - Period 8 / Lunch 2 Start
+  - Period 8 / Lunch 2 End
+  - Period 8 / Lunch 3 start
+  - Period 7 / Lunch 1 Start
+  - Period 7 / Lunch 1 End
+  - Period 7 / Lunch 2 Start
+  - Period 7 / Lunch 2 End
+  - Period 7 / Lunch 3 start
+  - Period 6 / Lunch 1 Start
+  - Period 6 / Lunch 1 End
+  - Period 6 / Lunch 2 Start
+  - Period 6 / Lunch 2 End
+  - Period 6 / Lunch 3 start  
+  - Period 5 / Lunch 1 Start
+  - Period 5 / Lunch 1 End
+  - Period 5 / Lunch 2 Start
+  - Period 5 / Lunch 2 End
+  - Period 5 / Lunch 3 start
+  - Period 4 / Lunch 1 Start
+  - Period 4 / Lunch 1 End
+  - Period 4 / Lunch 2 Start
+  - Period 4 / Lunch 2 End
+  - Period 4 / Lunch 3 start
+  - Period 3 / Lunch 1 Start
+  - Period 3 / Lunch 1 End
+  - Period 3 / Lunch 2 Start
+  - Period 3 / Lunch 2 End
+  - Period 3 / Lunch 3 start
+  - Period 2 / Lunch 1 Start
+  - Period 2 / Lunch 1 End
+  - Period 2 / Lunch 2 Start
+  - Period 2 / Lunch 2 End
+  - Period 2 / Lunch 3 start
+  - Period 1 / Lunch 1 Start
+  - Period 1 / Lunch 1 End
+  - Period 1 / Lunch 2 Start
+  - Period 1 / Lunch 2 End
+  - Period 1 / Lunch 3 start
+
+non-periods:
+  - Advisory
+  - Passing
+  - Pass to Buses
+  - End of School
+
+weekend:
+  name: Weekend
+  schedule: ~
+
+A:
+  name: Day A
+  schedule:
+    - 7:35 Passing
+    - 7:40 Period 1
+    - 8:40 Passing
+    - 8:43 Period 2
+    - 9:43 Passing
+    - 9:46 Advisory
+    - 10:16 Passing
+    # is there an easier way to subdivide the lunch period? I'd like all users to see
+    # both "Period 3" and "Lunch"
+    # Long period and Lunches
+    - 10:19 Period 8 / Lunch 1 Start
+    - 10:42 Period 8 / Lunch 1 End
+    - 10:57 Period 8 / Lunch 2 Start
+    - 11:23 Period 8 / Lunch 2 End
+    - 11:38 Period 8 / Lunch 3 Start
+    - 12:04 Passing
+    - 12:07 Period 3
+    - 1:07 Passing
+    - 1:10 Period 4
+    - 2:10 Pass to Buses
+    - 2:15 End of School
+
+B:
+  name: Day B
+  schedule:
+    - 7:35 Passing
+    - 7:40 Period 5
+    - 8:40 Passing
+    - 8:43 Period 6
+    - 9:43 Passing
+    - 9:46 Advisory
+    - 10:16 Passing
+    # Long period and Lunches
+    - 10:19 Period 1 / Lunch 1 Start
+    - 10:42 Period 1 / Lunch 1 End
+    - 10:57 Period 1 / Lunch 2 Start
+    - 11:23 Period 1 / Lunch 2 End
+    - 11:38 Period 1 / Lunch 3 Start
+    - 12:04 Passing
+    - 12:07 Period 7
+    - 1:07 Passing
+    - 1:10 Period 8
+    - 2:10 Pass to Buses
+    - 2:15 End of School
+
+C:
+  name: Day C
+  schedule:
+    - 7:35 Passing
+    - 7:40 Period 1
+    - 8:40 Passing
+    - 8:43 Period 2
+    - 9:43 Passing
+    - 9:46 Advisory
+    - 10:16 Passing
+    # Long period and Lunches
+    - 10:19 Period 7 / Lunch 1 Start
+    - 10:42 Period 7 / Lunch 1 End
+    - 10:57 Period 7 / Lunch 2 Start
+    - 11:23 Period 7 / Lunch 2 End
+    - 11:38 Period 7 / Lunch 3 Start
+    - 12:04 Passing
+    - 12:07 Period 3
+    - 1:07 Passing
+    - 1:10 Period 4
+    - 2:10 Pass to Buses
+    - 2:15 End of School
+
+D:
+  name: Day D
+  schedule:
+    - 7:35 Passing
+    - 7:40 Period 5
+    - 8:40 Passing
+    - 8:43 Period 6
+    - 9:43 Passing
+    - 9:46 Advisory
+    - 10:16 Passing
+    # Long period and Lunches
+    - 10:19 Period 2 / Lunch 1 Start
+    - 10:42 Period 2 / Lunch 1 End
+    - 10:57 Period 2 / Lunch 2 Start
+    - 11:23 Period 2 / Lunch 2 End
+    - 11:38 Period 2 / Lunch 3 Start
+    - 12:04 Passing
+    - 12:07 Period 7
+    - 1:07 Passing
+    - 1:10 Period 8
+    - 2:10 Pass to Buses
+    - 2:15 End of School
+
+E:
+  name: Day E
+  schedule:
+    - 7:35 Passing
+    - 7:40 Period 1
+    - 8:40 Passing
+    - 8:43 Period 2
+    - 9:43 Passing
+    - 9:46 Advisory
+    - 10:16 Passing
+    # Long period and Lunches
+    - 10:19 Period 6 / Lunch 1 Start
+    - 10:42 Period 6 / Lunch 1 End
+    - 10:57 Period 6 / Lunch 2 Start
+    - 11:23 Period 6 / Lunch 2 End
+    - 11:38 Period 6 / Lunch 3 Start
+    - 12:04 Passing
+    - 12:07 Period 3
+    - 1:07 Passing
+    - 1:10 Period 4
+    - 2:10 Pass to Buses
+    - 2:15 End of School
+
+F:
+  name: Day F
+  schedule:
+    - 7:35 Passing
+    - 7:40 Period 5
+    - 8:40 Passing
+    - 8:43 Period 6
+    - 9:43 Passing
+    - 9:46 Advisory
+    - 10:16 Passing
+    # Long period and Lunches
+    - 10:19 Period 3 / Lunch 1 Start
+    - 10:42 Period 3 / Lunch 1 End
+    - 10:57 Period 3 / Lunch 2 Start
+    - 11:23 Period 3 / Lunch 2 End
+    - 11:38 Period 3 / Lunch 3 Start
+    - 12:04 Passing
+    - 12:07 Period 7
+    - 1:07 Passing
+    - 1:10 Period 8
+    - 2:10 Pass to Buses
+    - 2:15 End of School
+
+G:
+  name: Day G
+  schedule:
+    - 7:35 Passing
+    - 7:40 Period 1
+    - 8:40 Passing
+    - 8:43 Period 2
+    - 9:43 Passing
+    - 9:46 Advisory
+    - 10:16 Passing
+    # Long period and Lunches
+    - 10:19 Period 5 / Lunch 1 Start
+    - 10:42 Period 5 / Lunch 1 End
+    - 10:57 Period 5 / Lunch 2 Start
+    - 11:23 Period 5 / Lunch 2 End
+    - 11:38 Period 5 / Lunch 3 Start
+    - 12:04 Passing
+    - 12:07 Period 3
+    - 1:07 Passing
+    - 1:10 Period 4
+    - 2:10 Pass to Buses
+    - 2:15 End of School
+
+H:
+  name: Day H
+  schedule:
+    - 7:35 Passing
+    - 7:40 Period 5
+    - 8:40 Passing
+    - 8:43 Period 6
+    - 9:43 Passing
+    - 9:46 Advisory
+    - 10:16 Passing
+    # Long period and Lunches
+    - 10:19 Period 4 / Lunch 1 Start
+    - 10:42 Period 4 / Lunch 1 End
+    - 10:57 Period 4 / Lunch 2 Start
+    - 11:23 Period 4 / Lunch 2 End
+    - 11:38 Period 4 / Lunch 3 Start
+    - 12:04 Passing
+    - 12:07 Period 7
+    - 1:07 Passing
+    - 1:10 Period 8
+    - 2:10 Pass to Buses
+    - 2:15 End of School
+
+DEarlyRelease:
+  name: Day D EarlyRelease
+  schedule:
+    - 7:35 Passing
+    - 7:40 Period 5
+    - 8:25 Passing
+    - 8:28 Period 6
+    - 9:13 Passing
+    - 9:16 Period 7
+    - 10:01 Passing
+    - 10:04 Period 8
+    - 10:49 Passing
+    - 10:52 Period 2 / Lunch 1 Start
+    - 11:15 Period 2 / Lunch 1 End
+    - 11:18 Period 2 / Lunch 2 Start
+    - 11:44 Period 2 / Lunch 2 End
+    - 11:47 Period 2 / Lunch 3 Start
+    - 12:13 Pass to Buses
+    - 12:17 End of School
+
+HEarlyRelease:
+  name: Day H EarlyRelease
+  schedule:
+    - 7:35 Passing
+    - 7:40 Period 5
+    - 8:25 Passing
+    - 8:28 Period 6
+    - 9:13 Passing
+    - 9:16 Period 7
+    - 10:01 Passing
+    - 10:04 Period 8
+    - 10:49 Passing
+    - 10:52 Period 2 / Lunch 1 Start
+    - 11:15 Period 2 / Lunch 1 End
+    - 11:18 Period 2 / Lunch 2 Start
+    - 11:44 Period 2 / Lunch 2 End
+    - 11:47 Period 2 / Lunch 3 Start
+    - 12:13 Pass to Buses
+    - 12:17 End of School
+
+
+
