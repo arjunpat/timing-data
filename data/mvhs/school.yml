@@ -215,19 +215,6 @@ sbac-2022-fri:
     - 13:29 Period 6
     - 14:19 Free
 
-sbac-2022-fri:
-  name: Friday SBAC Testing
-  schedule:
-    - 8:40 Junior Math Testing
-    - 10:40 Free
-    - 10:55 Period 2
-    - 11:45 Lunch
-    - 12:25 Free
-    - 12:32 Period 4
-    - 13:22 Free
-    - 13:29 Period 6
-    - 14:19 Free
-
 finals-dec-2021-tues:
   name: Tuesday Finals
   schedule:
