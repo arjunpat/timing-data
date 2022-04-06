@@ -12,6 +12,9 @@ non-periods:
   - Office Hours
   - Period 2A
   - Period 2B
+  - Junior ELA Testing
+  - Junior Math Testing
+  - Junior Math and Senior Science Testing
 
 weekend:
   name: Weekend
@@ -156,6 +159,75 @@ schedule-i:
     - 12:24 Lunch
     - 13:10 Free
 
+sbac-2022-tues:
+  name: Tuesday SBAC Testing
+  schedule:
+    - 8:40 Junior ELA Testing
+    - 10:40 Free
+    - 10:55 Period 1
+    - 11:45 Lunch
+    - 12:25 Free
+    - 12:32 Period 3
+    - 13:22 Free
+    - 13:29 Period 5
+    - 14:19 Free
+    - 14:26 Period 7
+    - 15:16 Free
+
+sbac-2022-wed:
+  name: Wednesday SBAC Testing
+  schedule:
+    - 8:40 Junior ELA Testing
+    - 10:40 Free
+    - 10:55 Period 2
+    - 11:45 Lunch
+    - 12:25 Free
+    - 12:32 Period 4
+    - 13:22 Free
+    - 13:29 Period 6
+    - 14:19 Free
+
+sbac-2022-thurs:
+  name: Thursday SBAC Testing
+  schedule:
+    - 8:40 Junior Math and Senior Science Testing
+    - 10:40 Free
+    - 10:55 Period 1
+    - 11:45 Lunch
+    - 12:25 Free
+    - 12:32 Period 3
+    - 13:22 Free
+    - 13:29 Period 5
+    - 14:19 Free
+    - 14:26 Period 7
+    - 15:16 Free
+
+sbac-2022-fri:
+  name: Friday SBAC Testing
+  schedule:
+    - 8:40 Junior Math Testing
+    - 10:40 Free
+    - 10:55 Period 2
+    - 11:45 Lunch
+    - 12:25 Free
+    - 12:32 Period 4
+    - 13:22 Free
+    - 13:29 Period 6
+    - 14:19 Free
+
+sbac-2022-fri:
+  name: Friday SBAC Testing
+  schedule:
+    - 8:40 Junior Math Testing
+    - 10:40 Free
+    - 10:55 Period 2
+    - 11:45 Lunch
+    - 12:25 Free
+    - 12:32 Period 4
+    - 13:22 Free
+    - 13:29 Period 6
+    - 14:19 Free
+
 finals-dec-2021-tues:
   name: Tuesday Finals
   schedule:
@@ -171,7 +243,7 @@ finals-dec-2021-wed:
     - 8:40 Period 2
     - 10:25 Brunch
     - 10:55 Free
-    - 11:02 Period 5
+    - 11:02 Period 5 
     - 12:47 Free
 
 finals-dec-2021-thurs:
