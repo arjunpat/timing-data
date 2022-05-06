@@ -95,11 +95,16 @@ calendar:
   # - 2/2/2022 schedule-i
   # - 2/19/2022-2/28/2022 weekend "Winter Break"
   # - 3/13/2022-3/15/2022 weekend "Three Day Weekend"
-  - 4/9/2022-4/17/2022 weekend "Spring Break"
-  - 4/19/2022 sbac-2022-tues
-  - 4/20/2022 sbac-2022-wed
-  - 4/21/2022 sbac-2022-thurs
-  - 4/22/2022 sbac-2022-fri
+  # - 4/9/2022-4/17/2022 weekend "Spring Break"
+  # - 4/19/2022 sbac-2022-tues
+  # - 4/20/2022 sbac-2022-wed
+  # - 4/21/2022 sbac-2022-thurs
+  # - 4/22/2022 sbac-2022-fri
   - 5/30/2022 weekend "Memorial Day"
+  - 6/2/2022 schedule-a
+  - 6/3/2022 finals-june-2022-fri
+  - 6/6/2022 finals-june-2022-mon
+  - 6/7/2022 finals-june-2022-tues
+  - 6/8/2022 finals-june-2022-wed
   # The start of the 2022-23 school year is to be announced, 8/16/2022 is only a placeholder for now
-  - 6/8/2022-8/16/2022 weekend "Summer Vacation"
+  - 6/9/2022-8/16/2022 weekend "Summer Vacation"
