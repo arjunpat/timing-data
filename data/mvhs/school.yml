@@ -189,6 +189,7 @@ finals-june-2022-tues:
 
 finals-june-2022-wed:
   name: Wednesday Finals
+  schedule:
     - 8:40 Period 6
     - 10:25 Free
 

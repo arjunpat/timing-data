@@ -94,16 +94,19 @@ class Validator {
         this.schoolError(`"${each}" is not a valid event name. It includes invalid characters`);
     }
 
+    const nameRegEx = /^[a-zA-Z-/0-9\(\) ]+$/;
     for (let key in school) {
       obj.presets[key] = {
         n: (() => {
-          if (typeof school[key].name !== 'string') {
+          if (typeof school[key].name !== 'string' || !nameRegEx.test(school[key].name)) {
             this.schoolError(`Preset "${key}" does not have a valid name: a valid name must be a string`);
           }
           return school[key].name;
         })(),
         s: (() => {
-          if (!school[key].schedule) {
+          if (typeof school[key].schedule === 'undefined') {
+            this.schoolError(`Preset "${key}" does not have a schedule; please add a schedule field.`)
+          } else if (!school[key].schedule) {
             return [];
           } else if (school[key].schedule instanceof Array) {
             this.checkScheduleArray(school[key].schedule, key, validEvents);
@@ -128,12 +131,7 @@ class Validator {
   }
 
   parseScheduleArray(arr) {
-    let data = [];
-
-    for (let str of arr)
-      data.push(this.getEvent(str));
-
-    return data;
+    return arr.map(this.getEvent);
   }
 
   checkScheduleArray(scheduleArr, presetName, validEvents) {
