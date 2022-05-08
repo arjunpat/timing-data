@@ -159,6 +159,39 @@ schedule-i:
     - 12:24 Lunch
     - 13:10 Free
 
+# Friday is the first day of the June 2022 finals
+finals-june-2022-fri:
+  name: Friday Finals
+  schedule:
+    - 8:40 Period 3
+    - 10:25 Brunch
+    - 10:55 Free
+    - 11:02 Period 5
+    - 12:47 Free
+
+finals-june-2022-mon:
+  name: Monday Finals
+  schedule:
+    - 8:40 Period 2
+    - 10:25 Brunch
+    - 10:55 Free
+    - 11:02 Period 7
+    - 12:47 Free
+
+finals-june-2022-tues:
+  name: Tuesday Finals
+  schedule:
+    - 8:40 Period 1
+    - 10:25 Brunch
+    - 10:55 Free
+    - 11:02 Period 4
+    - 12:47 Free
+
+finals-june-2022-wed:
+  name: Wednesday Finals
+    - 8:40 Period 6
+    - 10:25 Free
+
 sbac-2022-tues:
   name: Tuesday SBAC Testing
   schedule:
