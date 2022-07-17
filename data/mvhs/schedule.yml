@@ -10,70 +10,6 @@ defaults:
     - weekend
 
 calendar:
-  # - 6/8/2018 weekend "MLK Day"
-  # - 6/8/2019-8/18/2019 weekend "Summer Break"
-  # - 8/20/2019 tutorial
-  # - 8/23/2019 G
-  # - 9/6/2019 tutorial
-  # - 9/18/2019 D
-  # - 9/19/2019 E
-  # - 10/14/2019 tutorial "Earthquake Drill"
-  # - 10/15/2019 B
-  # - 10/16/2019 weekend "PSAT Testing / No School"
-  # - 10/21/2019 G "Homecoming Rally"
-  # - 10/25/2019 F "Homecoming Min Day"
-  # - 11/11/2019 weekend "Veteran's Day"
-  # - 11/18/2019 tutorial
-  # - 11/25/2019 tutorial
-  # - 11/27/2019-12/01/2019 weekend "Thanksgiving Break"
-  # - 12/18/2019 finals-267
-  # - 12/19/2019 finals-015
-  # - 12/20/2019 finals-34
-  # - 12/21/2019-1/6/2020 weekend "Holiday Break"
-  # - 1/7/2020 A
-  # - 1/13/2020 tutorial
-  # - 1/20/2020 weekend "MLK Holiday"
-  # - 1/21/2020 advisory-odd-block
-  # - 1/22/2020 advisory-even-block
-  # - 1/23/2020 tutorial
-  # - 1/24/2020 tutorial
-  # - 1/27/2020 G
-  # - 2/5/2020 D
-  # - 2/6/2020 E
-  # - 2/10/2020 G
-  # - 2/17/2020-2/21/2020 weekend "Winter Break"
-  # - 3/16/2020-3/17/2020 weekend "No School"
-  # - 3/18/2020-6/5/2020 weekend "Distance Learning"
-  # - 4/6/2020-4/10/2020 weekend "Spring Break"
-  # - 5/18/2020 G
-  # - 5/25/2020 weekend "Memorial Day"
-  # - 6/6/2020-8/11/2020 weekend "Summer Break"
-  # - 8/12/2020-8/14/2020 weekend "DL Orientation"
-  # - 9/7/2020 weekend "Labor Day"
-  # - 9/8/2020 dl-odd-block
-  # - 9/9/2020 dl-even-block
-  # - 11/21/2020-11/29/2020 weekend "Thanksgiving Break"
-  # - 12/16/2020 dl-finals-wed
-  # - 12/17/2020 dl-finals-thurs
-  # - 12/18/2020 dl-finals-fri
-  # - 12/19/2020-1/4/2021 weekend "Holiday Break"
-  # - 1/5/2021 dl-odd-block
-  # - 1/6/2021 dl-even-block
-  # - 1/18/2021 weekend "MLK Holiday"
-  # - 1/19/2021 dl-odd-block
-  # - 1/20/2021 dl-even-block
-  # - 1/21/2021 dl-advisory-odd
-  # - 1/22/2021 dl-advisory-even
-  # - 1/26/2021 dl-wed "Async/PSAT Testing"
-  # - 1/27/2021 dl-even-block
-  # - 2/15/2021-2/19/2021 weekend "Winter Break"
-  # - 3/15/2021 weekend "No School"
-  # - 3/16/2021 dl-odd-block
-  # - 3/17/2021 dl-even-block
-  # - 4/10/2021-4/18/2021 weekend "Spring Break"
-  # - 4/27/2021 dl-wed "Async/SAT Testing"
-  # - 4/28/2021 dl-even-block
-  # - 5/31/2021 weekend "Memorial Day"
   # - 6/5/2021-8/16/2021 weekend "Summer Break"
   # - 10/7/2021 schedule-a
   # - 10/8/2021 schedule-f
@@ -100,11 +36,11 @@ calendar:
   # - 4/20/2022 sbac-2022-wed
   # - 4/21/2022 sbac-2022-thurs
   # - 4/22/2022 sbac-2022-fri
-  - 5/30/2022 weekend "Memorial Day"
-  - 6/2/2022 schedule-a
-  - 6/3/2022 finals-june-2022-fri
-  - 6/6/2022 finals-june-2022-mon
-  - 6/7/2022 finals-june-2022-tues
-  - 6/8/2022 finals-june-2022-wed
+  # - 5/30/2022 weekend "Memorial Day"
+  # - 6/2/2022 schedule-a
+  # - 6/3/2022 finals-june-2022-fri
+  # - 6/6/2022 finals-june-2022-mon
+  # - 6/7/2022 finals-june-2022-tues
+  # - 6/8/2022 finals-june-2022-wed
   # The start of the 2022-23 school year is to be announced, 8/16/2022 is only a placeholder for now
   - 6/9/2022-8/16/2022 weekend "Summer Vacation"
