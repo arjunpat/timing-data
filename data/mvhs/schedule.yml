@@ -43,6 +43,8 @@ calendar:
   # - 6/7/2022 finals-june-2022-tues
   # - 6/8/2022 finals-june-2022-wed
   - 6/9/2022-8/9/2022 weekend "Summer Vacation"
+  - 8/10/2022 schedule-a
+  - 8/15/2022 schedule-g
   - 9/3/2022-9/5/2022 weekend "Three Day Weekend"
   - 10/13/2022-10/16/2022 weekend "End of Quarter/HOCO Break"
   - 11/7/2022 schedule-b
@@ -53,9 +55,12 @@ calendar:
   - 11/19/2022-11/27/22 weekend "Thanksgiving Break"
   - 12/23/22-1/9/23 weekend "Holiday Break"
   - 1/16/23 weekend "MLK Jr. Day"
+  - 1/30/23 schedule-g
   - 2/18/23-2/26/23 weekend "Winter Break"
   - 3/11/23-3/13/23 weekend "Three Day Weekend"
   - 4/8/23-4/16/23 weekend "Spring Break"
+  - 5/22/23 schedule-g
   - 5/27/23-5/29/23 weekend "Three Day Weekend"
   # Note: 8/9/23 is only used as a placeholder as the start of the 2023-24 school year is not yet announced
   - 6/9/23-8/9/23 weekend "Summer Vacation"
+  
