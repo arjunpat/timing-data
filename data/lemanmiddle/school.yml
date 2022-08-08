@@ -1,5 +1,4 @@
 periods:
-  - Zero Hour
   - 1st Hour
   - 2nd Hour
   - 3rd Hour
@@ -18,25 +17,23 @@ weekend:
 normal:
   name: Normal Schedule
   schedule:
-    - 7:00 Zero Hour
-    - 7:35 Free
-    - 7:45 1st Hour
-    - 8:28 Free
-    - 8:31 2nd Hour
-    - 9:09 Free
-    - 9:12 3rd Hour
-    - 9:50 Free
-    - 9:53 4th Hour
-    - 10:31 Free
-    - 10:34 5th Hour
-    - 11:12 Free
-    - 11:15 6th Hour
-    - 11:53 Free
-    - 11:56 7th Hour
-    - 12:34 Free
-    - 12:37 8th Hour
-    - 13:15 Free
-    - 13:18 9th Hour
-    - 13:56 Free
-    - 13:59 10th Hour
-    - 14:38 Free
+    - 7:35 1st Hour
+    - 8:17 Free
+    - 8:20 2nd Hour
+    - 8:59 Free
+    - 9:02 3rd Hour
+    - 9:41 Free
+    - 9:44 4th Hour
+    - 10:24 Free
+    - 10:27 5th Hour
+    - 11:07 Free
+    - 11:10 6th Hour
+    - 11:50 Free
+    - 11:53 7th Hour
+    - 12:33 Free
+    - 12:36 8th Hour
+    - 13:16 Free
+    - 13:19 9th Hour
+    - 13:58 Free
+    - 14:01 10th Hour
+    - 14:40 Free
