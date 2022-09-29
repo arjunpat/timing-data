@@ -8,7 +8,6 @@ periods:
   - Period 7
 
 non-periods:
-  - Lunch
   - JagPaws
   - Transition
 
@@ -33,7 +32,7 @@ schedule-a:
     - 12:53 Period 6
     - 13:38 Transition
     - 13:45 Period 7
-    - 14:30 Transition
+    - 14:30 Free 
 
 schedule-b:
   name: Jag Paws Schedule
@@ -53,4 +52,4 @@ schedule-b:
     - 13:03 Period 6
     - 13:43 Transition
     - 13:50 Period 7
-    - 14:30 Transition
+    - 14:30 Free
