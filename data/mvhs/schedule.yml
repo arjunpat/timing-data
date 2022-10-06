@@ -46,7 +46,11 @@ calendar:
   - 8/10/2022 schedule-a
   - 8/15/2022 schedule-g
   - 9/3/2022-9/5/2022 weekend "Three Day Weekend"
+  - 10/10/2022 schedule-b
+  - 10/11/2022 schedule-c
+  - 10/12/2022 sat-oct-2022
   - 10/13/2022-10/16/2022 weekend "End of Quarter/HOCO Break"
+  - 10/17/2022 schedule-g
   - 11/7/2022 schedule-b
   - 11/8/2022 schedule-c
   - 11/9/2022 schedule-b
@@ -63,4 +67,3 @@ calendar:
   - 5/27/23-5/29/23 weekend "Three Day Weekend"
   # Note: 8/9/23 is only used as a placeholder as the start of the 2023-24 school year is not yet announced
   - 6/9/23-8/9/23 weekend "Summer Vacation"
-  
