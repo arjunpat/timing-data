@@ -158,6 +158,12 @@ schedule-i:
     - 11:24 Lunch
     - 12:10 Free
 
+sat-oct-2022:
+  name: PSAT/SAT Testing
+  schedule:
+    - 8:15 PSAT/SAT Testing
+    - 12:15 Free
+
 # Friday is the first day of the June 2022 finals
 finals-june-2022-fri:
   name: Friday Finals
