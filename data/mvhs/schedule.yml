@@ -10,60 +10,48 @@ defaults:
     - weekend
 
 calendar:
-  # - 6/5/2021-8/16/2021 weekend "Summer Break"
-  # - 10/7/2021 schedule-a
-  # - 10/8/2021 schedule-f
-  # - 10/9/2021-10/12/2021 weekend "End of Quarter/HOCO Break"
-  # - 11/8/2021 schedule-b
-  # - 11/9/2021 schedule-c
-  # - 11/10/2021 schedule-b
-  # - 11/11/2021 weekend "Veterans Day"
-  # - 11/12/2021 schedule-c
-  # - 11/20/2021-11/28/2021 weekend "Thanksgiving Break"
-  # - 12/14/2021 finals-dec-2021-tues
-  # - 12/15/2021 finals-dec-2021-wed
-  # - 12/16/2021 finals-dec-2021-thurs
-  # - 12/17/2021 finals-dec-2021-fri
-  # - 12/18/2021-1/3/2022 weekend "Holiday Break"
-  # - 1/17/2022 weekend "MLK Jr. Day"
-  # - 1/24/2022 schedule-g
-  # - 2/1/2022 schedule-h
-  # - 2/2/2022 schedule-i
-  # - 2/19/2022-2/28/2022 weekend "Winter Break"
-  # - 3/13/2022-3/15/2022 weekend "Three Day Weekend"
-  # - 4/9/2022-4/17/2022 weekend "Spring Break"
-  # - 4/19/2022 sbac-2022-tues
-  # - 4/20/2022 sbac-2022-wed
-  # - 4/21/2022 sbac-2022-thurs
-  # - 4/22/2022 sbac-2022-fri
-  # - 5/30/2022 weekend "Memorial Day"
-  # - 6/2/2022 schedule-a
-  # - 6/3/2022 finals-june-2022-fri
-  # - 6/6/2022 finals-june-2022-mon
-  # - 6/7/2022 finals-june-2022-tues
-  # - 6/8/2022 finals-june-2022-wed
   - 6/9/2022-8/9/2022 weekend "Summer Vacation"
   - 8/10/2022 schedule-a
   - 8/15/2022 schedule-g
   - 9/3/2022-9/5/2022 weekend "Three Day Weekend"
+  - 9/20/2022 schedule-d
+  - 9/21/2022 schedule-e
   - 10/10/2022 schedule-b
   - 10/11/2022 schedule-c
   - 10/12/2022 sat-oct-2022
   - 10/13/2022-10/16/2022 weekend "End of Quarter/HOCO Break"
   - 10/17/2022 schedule-g
+  - 10/20/2022 schedule-a
+  - 10/21/2022 schedule-f
   - 11/7/2022 schedule-b
   - 11/8/2022 schedule-c
   - 11/9/2022 schedule-b
   - 11/10/2022 schedule-c
-  - 11/11/2022 weekend "Veterans Day"
+  - 11/11/2022 weekend "Veteran's Day"
   - 11/19/2022-11/27/22 weekend "Thanksgiving Break"
+  - 12/19/2022 finals-dec-2022-mon
+  - 12/20/2022 finals-dec-2022-tues
+  - 12/21/2022 finals-dec-2022-wed
+  - 12/22/2022 finals dec-2022-thurs
   - 12/23/22-1/9/23 weekend "Holiday Break"
   - 1/16/23 weekend "MLK Jr. Day"
   - 1/30/23 schedule-g
+  - 1/31/23 schedule-h
+  - 2/1/23 schedule-i
   - 2/18/23-2/26/23 weekend "Winter Break"
-  - 3/11/23-3/13/23 weekend "Three Day Weekend"
+  - 3/18/23-3/20/23 weekend "Three Day Weekend"
   - 4/8/23-4/16/23 weekend "Spring Break"
   - 5/22/23 schedule-g
   - 5/27/23-5/29/23 weekend "Three Day Weekend"
-  # Note: 8/9/23 is only used as a placeholder as the start of the 2023-24 school year is not yet announced
+  - 4/18/2023 sbac-2023-tues
+  - 4/19/2023 sbac-2023-wed
+  - 4/20/2023 sbac-2023-thurs
+  - 4/21/2023 sbac-2023-fri
+  - 5/22/2023 schedule-g
+  - 5/27/2023-5/29/2023 weekend "Three Day Weekend" 
+  - 6/5/2022 finals-june-2023-mon
+  - 6/6/2022 finals-june-2023-tues
+  - 6/7/2022 finals-june-2023-wed
+  - 6/8/2022 finals-june-2023-thurs
+  # Note: 8/9/23 is only used as a placeholder as the start of the 2023-24 school year has not yet been announced
   - 6/9/23-8/9/23 weekend "Summer Vacation"
