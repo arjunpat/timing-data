@@ -69,7 +69,7 @@ schedule-c:
     - 14:59 Free
 
 schedule-d:
-  name: Schedule D
+  name: Schedule D (Late Start)
   schedule:
     - 11:30 Period 1
     - 12:15 Lunch
@@ -82,7 +82,7 @@ schedule-d:
     - 15:36 Free
 
 schedule-e:
-  name: Schedule E
+  name: Schedule E (Late Start)
   schedule:
     - 11:30 Period 2
     - 12:15 Lunch
@@ -134,7 +134,7 @@ schedule-g:
     - 15:38 Free
 
 schedule-h:
-  name: Schedule H
+  name: Schedule H (Minimum Day)
   schedule:
     - 8:40 Period 1
     - 9:25 Free
@@ -148,7 +148,7 @@ schedule-h:
     - 13:00 Free
 
 schedule-i:
-  name: Schedule I
+  name: Schedule I (Minimum Day)
   schedule:
     - 8:40 Period 2
     - 9:25 Free
