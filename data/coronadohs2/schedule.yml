@@ -1,0 +1,10 @@
+defaults:
+  start: 8/8/2022
+  pattern:
+    - weekend
+    - schedule-a
+    - schedule-a
+    - schedule-a
+    - schedule-a
+    - schedule-a
+    - weekend
