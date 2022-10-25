@@ -1,0 +1,31 @@
+periods:
+  - Early Bird
+  - Period 1
+  - Period 2
+  - Period 3
+  - Period 4
+  - Lunch
+  - Period 5
+  - Period 6
+
+weekend:
+  name: Weekend
+  schedule: ~
+
+schedule-a:
+  name: Schedule A
+  schedule:
+    - 6:03 Early Bird
+    - 6:55 Free
+    - 7:00 Period 1
+    - 7:52 Free
+    - 7:57 Period 2
+    - 8:53 Free
+    - 8:58 Period 3
+    - 9:50 Free
+    - 9:55 Period 4
+    - 10:47 Free
+    - 10:52 Period 5
+    - 11:14 Lunch
+    - 12:19 Period 6
+    - 1:11 Free
