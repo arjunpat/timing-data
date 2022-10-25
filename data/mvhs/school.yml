@@ -7,6 +7,9 @@ periods:
   - Period 6
   - Period 7
 
+# these are periods with names that users should NOT
+# be able to customize
+# by deafult: Free, Brunch, Break, Lunch, and Passing are non-periods
 non-periods:
   - Tutorial
   - Office Hours
