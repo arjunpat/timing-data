@@ -210,7 +210,7 @@ sbac-2023-tues:
     - 14:26 Period 7
     - 15:16 Free
 
-sbac-2022-wed:
+sbac-2023-wed:
   name: Wednesday SBAC Testing
   schedule:
     - 8:40 Junior ELA Testing
@@ -223,7 +223,7 @@ sbac-2022-wed:
     - 13:29 Period 6
     - 14:19 Free
 
-sbac-2022-thurs:
+sbac-2023-thurs:
   name: Thursday SBAC Testing
   schedule:
     - 8:40 Junior Math and Senior Science Testing
@@ -238,7 +238,7 @@ sbac-2022-thurs:
     - 14:26 Period 7
     - 15:16 Free
 
-sbac-2022-fri:
+sbac-2023-fri:
   name: Friday SBAC Testing
   schedule:
     - 8:40 Junior Math Testing
