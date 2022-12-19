@@ -72,7 +72,7 @@ schedule-c:
     - 14:59 Free
 
 schedule-d:
-  name: Schedule D
+  name: Schedule D (Late Start)
   schedule:
     - 11:30 Period 1
     - 12:15 Lunch
@@ -85,7 +85,7 @@ schedule-d:
     - 15:36 Free
 
 schedule-e:
-  name: Schedule E
+  name: Schedule E (Late Start)
   schedule:
     - 11:30 Period 2
     - 12:15 Lunch
@@ -137,7 +137,7 @@ schedule-g:
     - 15:38 Free
 
 schedule-h:
-  name: Schedule H
+  name: Schedule H (Minimum Day)
   schedule:
     - 8:40 Period 1
     - 9:25 Free
@@ -151,7 +151,7 @@ schedule-h:
     - 13:00 Free
 
 schedule-i:
-  name: Schedule I
+  name: Schedule I (Minimum Day)
   schedule:
     - 8:40 Period 2
     - 9:25 Free
@@ -162,15 +162,8 @@ schedule-i:
     - 11:24 Lunch
     - 12:10 Free
 
-sat-oct-2022:
-  name: PSAT/SAT Testing
-  schedule:
-    - 8:15 PSAT/SAT Testing
-    - 12:15 Free
-
-# Friday is the first day of the June 2022 finals
-finals-june-2022-fri:
-  name: Friday Finals
+finals-june-2023-mon:
+  name: Monday Finals
   schedule:
     - 8:40 Period 3
     - 10:25 Brunch
@@ -178,8 +171,8 @@ finals-june-2022-fri:
     - 11:02 Period 5
     - 12:47 Free
 
-finals-june-2022-mon:
-  name: Monday Finals
+finals-june-2023-tues:
+  name: Tuesday Finals
   schedule:
     - 8:40 Period 2
     - 10:25 Brunch
@@ -187,22 +180,22 @@ finals-june-2022-mon:
     - 11:02 Period 7
     - 12:47 Free
 
-finals-june-2022-tues:
-  name: Tuesday Finals
+finals-june-2023-wed:
+  name: Wednesday Finals
   schedule:
     - 8:40 Period 1
     - 10:25 Brunch
     - 10:55 Free
-    - 11:02 Period 4
+    - 11:02 Period 6
     - 12:47 Free
 
-finals-june-2022-wed:
-  name: Wednesday Finals
+finals-june-2023-thurs:
+  name: Friday Finals
   schedule:
-    - 8:40 Period 6
+    - 8:40 Period 4
     - 10:25 Free
 
-sbac-2022-tues:
+sbac-2023-tues:
   name: Tuesday SBAC Testing
   schedule:
     - 8:40 Junior ELA Testing
@@ -258,8 +251,26 @@ sbac-2022-fri:
     - 13:29 Period 6
     - 14:19 Free
 
-finals-dec-2021-tues:
+finals-dec-2022-mon:
+  name: Monday Finals
+  schedule:
+    - 8:40 Period 3
+    - 10:25 Brunch
+    - 10:55 Free
+    - 11:02 Period 5
+    - 12:47 Free
+
+finals-dec-2022-tues:
   name: Tuesday Finals
+  schedule:
+    - 8:40 Period 2
+    - 10:25 Brunch
+    - 10:55 Free
+    - 11:02 Period 7
+    - 12:47 Free
+
+finals-dec-2022-wed:
+  name: Wednesday Finals
   schedule:
     - 8:40 Period 1
     - 10:25 Brunch
@@ -267,26 +278,14 @@ finals-dec-2021-tues:
     - 11:02 Period 6
     - 12:47 Free
 
-finals-dec-2021-wed:
-  name: Wednesday Finals
-  schedule:
-    - 8:40 Period 2
-    - 10:25 Brunch
-    - 10:55 Free
-    - 11:02 Period 5
-    - 12:47 Free
-
-finals-dec-2021-thurs:
-  name: Thursday Finals
-  schedule:
-    - 8:40 Period 3
-    - 10:25 Brunch
-    - 10:55 Free
-    - 11:02 Period 7
-    - 12:47 Free
-
-finals-dec-2021-fri:
+finals-dec-2022-thurs:
   name: Friday Finals
   schedule:
     - 8:40 Period 4
     - 10:25 Free
+
+sat-oct-2022:
+  name: PSAT/SAT Testing
+  schedule:
+    - 8:15 PSAT/SAT Testing
+    - 12:15 Free
