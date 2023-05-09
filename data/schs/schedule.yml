@@ -3,7 +3,7 @@ defaults:
   pattern:
     - weekend
     - normal
-    - chapel
+    - normal
     - normal
     - normal
     - normal
