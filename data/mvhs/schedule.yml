@@ -10,48 +10,55 @@ defaults:
     - weekend
 
 calendar:
-  - 6/9/2022-8/9/2022 weekend "Summer Vacation"
-  - 8/10/2022 schedule-a
-  - 8/15/2022 schedule-g
-  - 9/3/2022-9/5/2022 weekend "Three Day Weekend"
-  - 9/20/2022 schedule-d
-  - 9/21/2022 schedule-e
-  - 10/10/2022 schedule-b
-  - 10/11/2022 schedule-c
-  - 10/12/2022 sat-oct-2022
-  - 10/13/2022-10/16/2022 weekend "End of Quarter/HOCO Break"
-  - 10/17/2022 schedule-g
-  - 10/20/2022 schedule-a
-  - 10/21/2022 schedule-f
-  - 11/7/2022 schedule-b
-  - 11/8/2022 schedule-c
-  - 11/9/2022 schedule-b
-  - 11/10/2022 schedule-c
-  - 11/11/2022 weekend "Veteran's Day"
-  - 11/19/2022-11/27/22 weekend "Thanksgiving Break"
-  - 12/19/2022 finals-dec-2022-mon
-  - 12/20/2022 finals-dec-2022-tues
-  - 12/21/2022 finals-dec-2022-wed
-  - 12/22/2022 finals-dec-2022-thurs
-  - 12/23/22-1/9/23 weekend "Holiday Break"
-  - 1/16/23 weekend "MLK Jr. Day"
-  - 1/30/23 schedule-g
-  - 1/31/23 schedule-h
-  - 2/1/23 schedule-i
-  - 2/18/23-2/26/23 weekend "Winter Break"
-  - 3/18/23-3/20/23 weekend "Three Day Weekend"
-  - 4/8/23-4/16/23 weekend "Spring Break"
-  - 5/22/23 schedule-g
-  - 5/27/23-5/29/23 weekend "Three Day Weekend"
-  - 4/18/2023 sbac-2023-tues
-  - 4/19/2023 sbac-2023-wed
-  - 4/20/2023 sbac-2023-thurs
-  - 4/21/2023 sbac-2023-fri
-  - 5/22/2023 schedule-g
-  - 5/27/2023-5/29/2023 weekend "Three Day Weekend" 
-  - 6/5/2022 finals-june-2023-mon
-  - 6/6/2022 finals-june-2023-tues
-  - 6/7/2022 finals-june-2023-wed
-  - 6/8/2022 finals-june-2023-thurs
-  # Note: 8/9/23 is only used as a placeholder as the start of the 2023-24 school year has not yet been announced
-  - 6/9/23-8/9/23 weekend "Summer Vacation"
+  - 6/8/2023-8/8/2022 weekend "Summer Vacation"
+  - 8/9/2023 schedule-a
+  - 8/10/2023 schedule-a
+  - 8/11/2023 schedule-a
+  - 8/14/2023 schedule-g2
+  - 9/2/2023-9/4/2023 weekend "Labor Day Weekend"
+  - 9/26/2023 schedule-h
+  - 9/27/2023 schedule-i
+  - 10/2/2023 schedule-g3
+  - 10/5/2023 schedule-d
+  - 10/6/2023 schedule-e
+  - 10/9/2023 schedule-b
+  - 10/10/2023 schedule-c
+  - 10/11/2023 sat-oct-2023
+  - 10/12/2023-10/15/2023 weekend "End of Quarter Break"
+  - 11/6/2023 schedule-b
+  - 11/7/2023 schedule-c
+  - 11/8/2023 schedule-b
+  - 11/9/2023 schedule-c
+  - 11/10/2023-11/12/2023 weekend "Veteran's Day Weekend"
+  - 11/18/2023-11/26/2023 weekend "Thanksgiving Break"
+  - 12/19/2023 finals-day-1
+  - 12/20/2023 finals-day-2
+  - 12/21/2023 finals-day-3
+  - 12/22/2023-1/9/23 weekend "Holiday Break"
+  - 1/10/2024 schedule-a
+  - 1/11/2024 schedule-a
+  - 1/12/2024 schedule-a
+  - 1/13/2024-1/15/2024 weekend "MLK Long Weekend"
+  - 1/22/2024 schedule-g4
+  - 2/5/2024 schedule-g2
+  - 2/13/2024 schedule-d
+  - 2/14/2024 schedule-e
+  - 2/17/2024-2/25/2024 weekend "Winter Break"
+  - 3/18/2024 schedule-c
+  - 3/19/2024 schedule-h
+  - 3/20/2024 schedule-i
+  - 3/22/2024 schedule-g3
+  - 3/23/2024-3/25/2024 weekend "End of Quarter Break"
+  - 3/26/2024 sbac-2024-tues
+  - 3/27/2024 sbac-2024-wed
+  - 3/28/2024 sbac-2024-thurs
+  - 3/29/2024 sbac-2024-fri
+  - 4/6/2024-4/14/2024 weekend "Spring Break"
+  - 4/30/2024 schedule-d
+  - 5/1/2024 schedule-e
+  - 5/20/2024 schedule-g4
+  - 5/25/2024-5/27/2024 weekend "Memorial Day Weekend"
+  - 6/4/2024 finals-day-1
+  - 6/5/2024 finals-day-2
+  - 6/6/2024 finals-day-3
+  - 6/7/2024-8/6/2024 weekend "Summer Vacation" # 8/6 Predicted day before 2024-2025 FDoS
