@@ -10,7 +10,7 @@ defaults:
     - weekend
 
 calendar:
-  - 6/8/2023-8/8/2022 weekend "Summer Vacation"
+  - 6/8/2023-8/8/2023 weekend "Summer Vacation"
   - 8/9/2023 schedule-a
   - 8/10/2023 schedule-a
   - 8/11/2023 schedule-a
@@ -34,7 +34,7 @@ calendar:
   - 12/19/2023 finals-day-1
   - 12/20/2023 finals-day-2
   - 12/21/2023 finals-day-3
-  - 12/22/2023-1/9/23 weekend "Holiday Break"
+  - 12/22/2023-1/9/24 weekend "Holiday Break"
   - 1/10/2024 schedule-a
   - 1/11/2024 schedule-a
   - 1/12/2024 schedule-a
