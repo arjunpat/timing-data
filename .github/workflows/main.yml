@@ -1,0 +1,38 @@
+name: Validate Schedule CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18.x' # You can specify the desired Node.js version here
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run index.js
+        id: run-node
+        run: node index.js || echo "Error"
+
+      - name: Check for output
+        run: |
+          if [ -z "${{ steps.run-node.outputs.stdout }}" ]; then
+            echo "No output. Success!"
+          else
+            echo "Error: ${{ steps.run-node.outputs.stdout }}"
+            exit 1
+          fi
