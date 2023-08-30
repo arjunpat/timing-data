@@ -19,37 +19,37 @@ schedule-a:
   name: Regular Bell Schedule
   schedule:
     - 7:45 Period 1
-    - 8:30 Transition
-    - 8:37 Period 2
+    - 8:31 Transition
+    - 8:36 Period 2
     - 9:22 Transition
-    - 9:29 Period 3
-    - 10:21 Transition
-    - 10:28 Period 4
-    - 11:13 Lunch
-    - 11:54 Transition
+    - 9:27 Period 3
+    - 10:20 Transition
+    - 10:25 Period 4
+    - 11:11 Lunch
+    - 11:56 Transition
     - 12:01 Period 5
-    - 12:46 Transition
-    - 12:53 Period 6
+    - 12:47 Transition
+    - 12:52 Period 6
     - 13:38 Transition
-    - 13:45 Period 7
+    - 13:43 Period 7
     - 14:30 Free 
 
 schedule-b:
   name: Jag Paws Schedule
   schedule:
     - 7:45 Period 1
-    - 8:25 Transition
+    - 8:27 Transition
     - 8:32 Period 2
-    - 9:12 JagPaws
-    - 9:54 Transition
-    - 10:01 Period 3
-    - 10:41 Transition
-    - 10:48 Period 4
-    - 11:28 Lunch
+    - 9:14 JagPaws
+    - 9:51 Transition
+    - 9:56 Period 3
+    - 10:38 Transition
+    - 10:43 Period 4
+    - 11:25 Lunch
     - 12:09 Transition
-    - 12:16 Period 5
+    - 12:14 Period 5
     - 12:56 Transition
-    - 13:03 Period 6
+    - 13:01 Period 6
     - 13:43 Transition
-    - 13:50 Period 7
+    - 13:48 Period 7
     - 14:30 Free
