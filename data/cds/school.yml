@@ -1,0 +1,30 @@
+periods: 
+  - Period 0
+  - Period 1
+  - Period 2
+  - Period 3
+  - Period 4
+  - Period 5
+  - Period 6
+  - Period 7
+
+non-periods:
+  - Tutorial
+
+weekend:
+  name: Weekend
+  schedule: ~
+
+dl-hybrid:
+  name: Hybrid Model
+  schedule:
+    - 6:23 Period 0
+    - 7:25 Period 1
+    - 8:27 Period 2
+    - 9:34 Period 3
+    - 10:36 Period 4
+    - 11:15 Period 5
+    - 12:17 Period 6
+    - 13:19 Period 7
+
+
