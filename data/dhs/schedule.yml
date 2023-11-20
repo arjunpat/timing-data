@@ -1,10 +1,10 @@
 defaults:
   start: 6/5/2023
   pattern:
-    - weekend
     - monday
     - normal
     - normal
     - normal
     - normal
+    - weekend
     - weekend
