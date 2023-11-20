@@ -17,7 +17,7 @@ normal:
     - 12:59 Period 4
     - 14:23 Passing
     - 14:28 Period 5
-    - 15:10 Passing
+    - 15:10 Free
 
 monday:
   name: Monday
@@ -31,9 +31,7 @@ monday:
     - 13:31 Period 4
     - 14:41 Passing
     - 14:46 Period 5
-    - 15:10 Passing
-
-
+    - 15:10 Free
 
 weekend:
   name: weekend

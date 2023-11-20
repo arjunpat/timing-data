@@ -1,12 +1,10 @@
 # periods.io timing data
-If you would like to add your school to periods.io, allowing for you to easily see the remaining time in class among other features, please follow the below steps and submit a pull request.
+If you would like to add your school to periods.io, allowing for you to easily see the remaining time in class, please follow the below steps and submit a pull request.
 
 We will review the pull request, accept it, and make your schedule live!
 
 ## 0. Requirements
-You need to have a very basic understanding of computer languages and know YAML syntax. It's super simple to learn if you are familiar with basic programming; watch a quick tutorial on YAML if you are new.
-
-Create a GitHub issue if any of this is unclear and needs to be better explained.
+You understand YAML syntax to add your schedule. It's fairly simple to learn if you are familiar with basic programming; watch a quick tutorial on YAML if you are new.
 
 ## 1. Basics
 Every school on periods.io has a name and an ID.
@@ -20,7 +18,7 @@ Your ID must be unique but the name does not *technically* need to be unique. Ho
 **Check `data/directory.yml` to see all IDs and names for other schools, and add your ID and name to that file, following the other entries as an example.**
 
 ## 3. The Folder
-Each school has a folder to store it's schedule data. Those folders can be found in `data`.
+Each school has a folder to store its schedule data. Those folders can be found in `data`.
 
 **Create a folder for your school in the `data` directory, naming it the ID you chose for your school.**
 
@@ -40,7 +38,7 @@ Add each of the possible daily schedules to the file, following the frame for `d
 
 The `defaults` section allows you to specify a recurring order of schedules that begins on a certain `start` date and cycles indefinitely.
 
-The `calendar` section allow you to override the defaults on specific days or date ranges.
+The `calendar` section allows you to override the defaults on specific days or date ranges.
 
 Some example uses for this could be:
 ```
