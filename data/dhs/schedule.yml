@@ -8,3 +8,17 @@ defaults:
     - normal
     - weekend
     - weekend
+
+
+calendar:
+ - 11/22/23-11/24/23 weekend "Fall Break"
+ - 12/18/23-1/2/24 weekend "Winter Break"
+ - 1/15/24 weekend "MLK Day"
+ - 2/15/24 weekend "Conferences"
+ - 2/16/24 weekend "No School"
+ - 2/19/24 weekend "Presedent's day"
+ - 3/11/24-3/15/24 weekend "Spring Break"
+ - 4/19/24 weekend "No School"
+ - 5/19/24 weekend "Graduating Day"
+ - 5/20/24-8/14/24 weekend "Summer/No School"
+ - 8/15/24 weekend "Day Before Start"
