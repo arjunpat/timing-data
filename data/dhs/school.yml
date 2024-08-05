@@ -1,0 +1,38 @@
+periods:
+  - Period 1
+  - Period 2
+  - Period 3
+  - Period 4
+  - Period 5
+
+normal:
+  name: Tuesday-Friday
+  schedule:
+    - 8:00 Period 1
+    - 9:24 Passing
+    - 9:29 Period 2
+    - 10:53 Passing
+    - 10:58 Period 3
+    - 12:54 Passing
+    - 12:59 Period 4
+    - 14:23 Passing
+    - 14:28 Period 5
+    - 15:10 Free
+
+monday:
+  name: Monday
+  schedule:
+    - 9:00 Period 1
+    - 10:10 Passing
+    - 10:15 Period 2
+    - 11:25 Passing
+    - 11:30 Period 3
+    - 13:26 Passing
+    - 13:31 Period 4
+    - 14:41 Passing
+    - 14:46 Period 5
+    - 15:10 Free
+
+weekend:
+  name: weekend
+  schedule: ~

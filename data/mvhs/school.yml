@@ -17,7 +17,7 @@ non-periods:
   - Period 3A
   - Period 3B
   - Period 4A
-  - Period 4B  
+  - Period 4B
   - Junior ELA Testing
   - Junior Math Testing
   - Junior Math and Senior Science Testing
@@ -86,7 +86,7 @@ schedule-d:
     - 10:52 Period 5
     - 11:52 Free
     - 11:59 Period 7
-    - 12:59 Free # <- Technically Lunch 
+    - 12:59 Free # <- Technically Lunch
 
 schedule-e:
   name: Schedule E (Early Release)
