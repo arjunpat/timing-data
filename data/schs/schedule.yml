@@ -1,9 +1,9 @@
 defaults:
-  start: 9/13/2020
+  start: 9/23/2024
   pattern:
     - weekend
     - normal
-    - normal
+    - chapel
     - normal
     - normal
     - normal
@@ -12,5 +12,5 @@ defaults:
 #The following is due to change.
 
 calendar:
-   - 9/25/2020 evening-pep
+   - 10/11/2024 evening-pep
 
