@@ -1,5 +1,5 @@
 defaults:
-  start: 9/23/2024
+  start: 9/15/2024
   pattern:
     - weekend
     - normal
