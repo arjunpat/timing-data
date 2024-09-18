@@ -60,27 +60,50 @@ chapel:
     - 15:40 Free
 
 
-evening-pep:
-  name: Afternoon Pep Rally
+early-pep:
+  name: Early Pep Rally
   schedule:
     - 8:15 Period 1
-    - 9:00 Passing
-    - 9:06 Period 2
-    - 9:51 Passing
-    - 9:57 Period 3
-    - 10:42 Passing
-    - 10:48 Period 4
-    - 11:33 Passing
-    - 11:39 Period 5
-    - 12:25 Lunch
-    - 13:07 Passing
-    - 13:13 Period 6
-    - 13:45 Passing
-    - 13:51 Period 7
-    - 14:23 Passing
-    - 14:29 Period 8
-    - 15:00 Dismiss to Football Field
-    - 15:10 Pep Rally
+    - 8:55 Passing
+    - 9:01 Period 2
+    - 9:41 Passing
+    - 9:47 Period 3
+    - 10:27 Passing
+    - 10:33 Period 4
+    - 11:13 Passing
+    - 11:19 Period 5
+    - 12:05 Pep Rally
+    - 12:30 Lunch
+    - 13:13 Passing
+    - 13:19 Period 6
+    - 14:02 Passing
+    - 14:08 Period 7
+    - 14:51 Passing
+    - 14:57 Period 8
+    - 15:40 Free
+
+
+late-pep:
+  name: Late Pep Rally
+  schedule:
+    - 8:15 Period 1
+    - 8:53 Passing
+    - 8:59 Period 2
+    - 9:37 Passing
+    - 9:43 Period 3
+    - 10:21 Passing
+    - 10:27 Period 4
+    - 11:05 Passing
+    - 11:11 Period 5
+    - 11:49 Passing
+    - 11:55 Period 6
+    - 12:33 Lunch
+    - 13:10 Passing
+    - 13:16 Period 7
+    - 13:54 Passing
+    - 14:00 Period 8
+    - 14:38 Passing
+    - 14:45 Pep Rally
     - 15:40 Free
 
 weekend:
