@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/arjunpat/timing-data#readme",
   "dependencies": {
-    "js-yaml": "^3.14.0"
+    "js-yaml": "^4.1.1"
   }
 }
