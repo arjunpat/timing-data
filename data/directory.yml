@@ -56,3 +56,15 @@ coronadohs2:
 
 dhs:
   name: Derby High School, KS
+
+ls_ll:
+  name: Lakeside School, WA - A4 / B4 Lunch
+
+ls_le:
+  name: Lakeside School, WA - A4 / B3 Lunch
+
+ls_el:
+  name: Lakeside School, WA - A3 / B4 Lunch
+
+ls_ee:
+  name: Lakeside School, WA - A3 / B3 Lunch

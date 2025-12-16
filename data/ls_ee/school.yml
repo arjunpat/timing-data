@@ -1,0 +1,170 @@
+# Late-late lunch
+# Change: entered lunches/A3/A4/B3/B4
+
+periods: 
+  - A1
+  - A2
+  - A4
+  - A5
+  - B1
+  - B2
+  - B4
+  - B5
+
+non-periods:
+  - Passing Period
+  - ACT
+  - Advisory
+  - Assembly
+  - Convocation
+
+# Registry (main): aday, aday_adv, aday_asm, bday, bday_adv, bday_asm
+# Registry (other): weekend, tapas, conv_aday, extadv_bday, psat, sat, mayday
+
+aday:
+  name: A Day (T/Th)
+  schedule: 
+    - 8:30 A1
+    - 9:40 Passing Period
+    - 9:50 A2
+    - 11:00 Lunch
+    - 11:50 A4
+    - 13:05 ACT
+    - 14:00 A5
+    - 15:10 Free
+
+aday_adv:
+  name: A Day (M/F)
+  schedule: 
+    - 8:30 A1
+    - 9:40 Passing Period
+    - 9:50 A2
+    - 11:00 Lunch
+    - 11:50 A4
+    - 13:05 Advisory
+    - 13:25 Free
+    - 14:00 A5
+    - 15:10 Free
+
+aday_asm:
+  name: A Day (W)
+  schedule: 
+    - 8:30 A1
+    - 9:40 Passing Period
+    - 9:50 A2
+    - 11:00 Lunch
+    - 11:50 A4
+    - 13:05 Assembly
+    - 14:00 A5
+    - 15:10 Free
+
+bday:
+  name: B Day (T/Th)
+  schedule: 
+    - 8:30 B1
+    - 9:40 Passing Period
+    - 9:50 B2
+    - 11:00 Lunch
+    - 11:50 B4
+    - 13:05 ACT
+    - 14:00 B5
+    - 15:10 Free
+
+bday_adv:
+  name: B Day (M/F)
+  schedule: 
+    - 8:30 B1
+    - 9:40 Passing Period
+    - 9:50 B2
+    - 11:00 Lunch
+    - 11:50 B4
+    - 13:05 Advisory
+    - 13:25 Free
+    - 14:00 B5
+    - 15:10 Free
+
+bday_asm:
+  name: B Day (W)
+  schedule: 
+    - 8:30 B1
+    - 9:40 Passing Period
+    - 9:50 B2
+    - 11:00 Lunch
+    - 11:50 B4
+    - 13:05 Assembly
+    - 14:00 B5
+    - 15:10 Free
+
+weekend:
+  name: Weekend
+  schedule: ~
+
+tapas:
+  name: TAPAS Day
+  schedule:
+    - 8:30 A1
+    - 9:10 Passing Period
+    - 9:15 B1
+    - 9:55 Passing Period
+    - 10:00 A2
+    - 10:40 Passing Period
+    - 10:45 B2
+    - 11:25 Lunch
+    - 12:15 A4
+    - 12:55 Passing Period
+    - 13:00 B4
+    - 13:40 Passing Period
+    - 13:45 A5
+    - 12:25 Passing Period
+    - 14:30 B5
+    - 3:10 Free
+
+conv_aday:
+  name: Modified A Day (Convocation)
+  schedule:
+    - 8:30 Advisory
+    - 9:00 Passing Period
+    - 9:05 A1
+    - 10:05 Passing Period
+    - 10:15 A2
+    - 11:15 Lunch
+    - 12:00 A4
+    - 13:00 Passing Period
+    - 13:05 A5
+    - 14:05 Passing Period
+    - 14:15 Convocation
+    - 15:10 Free
+
+extadv_bday:
+  name: Modified B Day (Extended Advisory)
+  schedule:
+    - 8:30 B1
+    - 9:40 Passing Period
+    - 9:50 B2
+    - 11:00 Lunch
+    - 11:50 B4
+    - 13:05 Advisory
+    - 14:00 A5
+    - 15:10 Free
+
+psat:
+  name: PSAT Testing Day
+  schedule:
+    - 8:30 PSAT Testing
+    - 11:30 Free
+
+sat:
+  name: SAT Testing Day
+  schedule:
+    - 8:30 SAT Testing
+    - 11:00 Free
+
+mayday:
+  name: May Day
+  schedule:
+    - 8:30 Advisory
+    - 9:00 Morning Activities
+    - 11:50 Advisory
+    - 12:10 Lunch
+    - 12:30 May Day
+    - 3:00 Free
