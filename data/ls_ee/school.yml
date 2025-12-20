@@ -17,6 +17,10 @@ non-periods:
   - Advisory
   - Assembly
   - Convocation
+  - PSAT Testing
+  - SAT Testing
+  - Morning Activities
+  - May Day
 
 # Registry (main): aday, aday_adv, aday_asm, bday, bday_adv, bday_asm
 # Registry (other): weekend, tapas, conv_aday, extadv_bday, psat, sat, mayday
@@ -115,9 +119,9 @@ tapas:
     - 13:00 B4
     - 13:40 Passing Period
     - 13:45 A5
-    - 12:25 Passing Period
+    - 14:25 Passing Period
     - 14:30 B5
-    - 3:10 Free
+    - 15:10 Free
 
 conv_aday:
   name: Modified A Day (Convocation)
@@ -167,4 +171,4 @@ mayday:
     - 11:50 Advisory
     - 12:10 Lunch
     - 12:30 May Day
-    - 3:00 Free
+    - 15:00 Free
