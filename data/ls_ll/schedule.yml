@@ -2,78 +2,78 @@ defaults:
   start: 12/8/2025
   pattern:
     - weekend
-    - aday_adv
+    - aday-adv
     - bday
-    - aday_asm
+    - aday-asm
     - bday
-    - aday_adv
+    - aday-adv
     - weekend
     - weekend
-    - bday_adv
+    - bday-adv
     - aday
-    - bday_asm
+    - bday-asm
     - aday
-    - bday_adv
+    - bday-adv
     - weekend
 
 # Assuming inclusiveness
 calendar:
   - 12/22/2025-1/2/2026 weekend "Winter Break"
   - 1/19/2026 weekend "MLK Jr. Day"
-  - 1/20/2026 weekend "Faculty Workday (No Classes)"
+  - 1/20/2026 weekend "Faculty Workday - No Classes"
   - 2/16/2026-2/20/2026 weekend "Midwinter Break"
   - 2/23/2026 tapas
-  - 2/27/2026 weekend "Professional Development Day (No Classes)"
+  - 2/27/2026 weekend "Professional Development Day - No Classes"
   # fixing cycle
-  - 3/2/2026 bday_adv
+  - 3/2/2026 bday-adv
   - 3/3/2026 aday
-  - 3/4/2026 bday_asm
+  - 3/4/2026 bday-asm
   - 3/5/2026 aday
-  - 3/6/2026 bday_adv
+  - 3/6/2026 bday-adv
   #
-  - 3/9/2026 aday_adv
+  - 3/9/2026 aday-adv
   - 3/10/2026 bday
-  - 3/11/2026 aday_asm
+  - 3/11/2026 aday-asm
   - 3/12/2026 bday
-  - 3/13/2026 aday_adv
+  - 3/13/2026 aday-adv
   #
-  - 3/16/2026 bday_adv
+  - 3/16/2026 bday-adv
   - 3/17/2026 aday
-  - 3/18/2026 bday_asm
+  - 3/18/2026 bday-asm
   - 3/19/2026 aday
-  - 3/20/2026 bday_adv
+  - 3/20/2026 bday-adv
   #
-  - 3/23/2026 aday_adv
+  - 3/23/2026 aday-adv
   - 3/24/2026 bday
-  - 3/25/2026 aday_asm
+  - 3/25/2026 aday-asm
   - 3/26/2026 bday
-  - 3/27/2026 weekend "Faculty Workday (No Classes)"
+  - 3/27/2026 weekend "Faculty Workday - No Classes"
   # cycle fixed
   - 4/13/2026-4/17/2026 weekend "Spring Break"
   # fix cycle
-  - 4/20/2026 aday_adv
+  - 4/20/2026 aday-adv
   - 4/21/2026 bday
-  - 4/22/2026 aday_asm
+  - 4/22/2026 aday-asm
   - 4/23/2026 bday
-  - 4/24/2026 aday_adv
+  - 4/24/2026 aday-adv
   #
-  - 4/27/2026 bday_adv
+  - 4/27/2026 bday-adv
   - 4/28/2026 aday
-  - 4/29/2026 bday_asm
+  - 4/29/2026 bday-asm
   - 4/30/2026 aday
-  - 5/1/2026 weekend "Professional Development Day (No Classes)"
+  - 5/1/2026 weekend "Professional Development Day - No Classes"
   # cycle fixed
   - 5/25/2026 weekend "Memorial Day"
   # fixing cycle
   - 5/26/2026 aday
-  - 5/27/2026 bday_asm
+  - 5/27/2026 bday-asm
   - 5/28/2026 aday
   - 5/29/2026 mayday
   # cycle fixed
   # Finals (Estimated)
-  - 6/2/2026 aday "Finals (Sci, Eng, Lang)"
-  - 6/3/2026 bday "Finals (Sci, Eng, Lang)"
-  - 6/4/2026 aday "Finals (Hist, Math, Art, PE)"
-  - 6/5/2026 bday "Finals (Hist, Math, Art, PE)"
+  - 6/2/2026 aday "Finals - SciEngLang"
+  - 6/3/2026 bday "Finals - SciEngLang"
+  - 6/4/2026 aday "Finals - HistMathArtPE"
+  - 6/5/2026 bday "Finals - HistMathArtPE"
   # Estimation (End is not posted)
-  - 6/8/2026-8/1/2026 "Summer Break"
+  - 6/8/2026-8/1/2026 weekend "Summer Break"
