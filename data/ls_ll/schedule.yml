@@ -2,18 +2,18 @@ defaults:
   start: 12/8/2025
   pattern:
     - weekend
-    - aday-adv
-    - bday
-    - aday-asm
-    - bday
-    - aday-adv
-    - weekend
-    - weekend
     - bday-adv
     - aday
     - bday-asm
     - aday
     - bday-adv
+    - weekend
+    - weekend
+    - aday-adv
+    - bday
+    - aday-asm
+    - bday
+    - aday-adv
     - weekend
 
 # Assuming inclusiveness
