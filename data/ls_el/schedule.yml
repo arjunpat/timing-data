@@ -1,5 +1,5 @@
 defaults:
-  start: 12/8/2025
+  start: 2/22/2025
   pattern:
     - weekend
     - bday-adv
